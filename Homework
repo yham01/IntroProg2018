@@ -1,0 +1,1256 @@
+Last login: Wed Feb 21 23:27:43 on console
+macbook-de-yaelin:~ Yaelin$ git clone https://github.com/hgarc014/git-game.git
+fatal: destination path 'git-game' already exists and is not an empty directory.
+macbook-de-yaelin:~ Yaelin$ git clone https://github.com/hgarc014/git-game.git
+fatal: destination path 'git-game' already exists and is not an empty directory.
+macbook-de-yaelin:~ Yaelin$ ls -a
+.			.bash_sessions		Library
+..			.cups			Movies
+.CFUserTextEncoding	.gitconfig		Music
+.DS_Store		.rnd			Pictures
+.RData			.stata14		Public
+.Rapp.history		Applications		VirtualBox VMs
+.Rhistory		Desktop			git-game
+.Trash			Documents		new
+.bash_history		Downloads
+macbook-de-yaelin:~ Yaelin$ rm -rf https://github.com/hgarc014/git-game.git
+macbook-de-yaelin:~ Yaelin$ ls -a
+.			.bash_sessions		Library
+..			.cups			Movies
+.CFUserTextEncoding	.gitconfig		Music
+.DS_Store		.rnd			Pictures
+.RData			.stata14		Public
+.Rapp.history		Applications		VirtualBox VMs
+.Rhistory		Desktop			git-game
+.Trash			Documents		new
+.bash_history		Downloads
+macbook-de-yaelin:~ Yaelin$ cd git-game
+macbook-de-yaelin:git-game Yaelin$ rm -rf https://github.com/hgarc014/git-game.git
+macbook-de-yaelin:git-game Yaelin$ ls-a
+-bash: ls-a: command not found
+macbook-de-yaelin:git-game Yaelin$ ls -a
+.		..		.git		LICENSE		README.md
+macbook-de-yaelin:git-game Yaelin$ cat read.md
+cat: read.md: No such file or directory
+macbook-de-yaelin:git-game Yaelin$ git clone https://github.com/hgarc014/git-game.git
+Cloning into 'git-game'...
+remote: Counting objects: 243, done.
+remote: Total 243 (delta 0), reused 0 (delta 0), pack-reused 243
+Receiving objects: 100% (243/243), 1.25 MiB | 90.00 KiB/s, done.
+Resolving deltas: 100% (86/86), done.
+macbook-de-yaelin:git-game Yaelin$ cat readme.md
+# Welcome to the git-game!! 
+
+This is a terminal game designed to test your knowledge of git commands.
+Each level in the game is a task to perform on this repo.
+Once you perform that task, you will be given your next task.
+  There are a total of ten levels, each one harder than last!
+
+### Let's get this journey started!! 
+Clone this repository by running:
+
+```
+$ git clone https://github.com/hgarc014/git-game.git
+```
+**Don't know a lot about git??**
+
+Then you should check these files for assistance:
+
+https://github.com/mikeizbicki/ucr-cs100/blob/2015winter/textbook/cheatsheets/git-cheatsheet.md
+
+https://github.com/mikeizbicki/ucr-cs100/tree/2015winter/textbook/tools/git/advanced-git
+
+Otherwise, you are free to continue...
+
+**You can win a badge for completing this game!**
+
+learn more about badges here: https://openbadgefactory.com/faq
+
+**You should always check the README.md file for your next clue!**
+
+``Level 1``
+
+Your first task is to checkout the commit whose commit message is the answer to this question: 
+
+> When a programmer is born, what is the first thing he/she learns to say?
+
+macbook-de-yaelin:git-game Yaelin$ Hello Word
+-bash: Hello: command not found
+macbook-de-yaelin:git-game Yaelin$ git log
+commit d851edda3009332dd5d3f8f949a102f279dad809 (HEAD -> master, origin/master, origin/HEAD)
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 21:03:04 2015 -0700
+
+    updated README for badge notification
+
+commit 7c8c3ccc2f4bb118a657f1f7a7ab4e163d1b7a30
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:57:08 2015 -0700
+
+    added level1
+
+commit 228389a54073ed1e6ec98e3bfa59039b416efd4d
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:56:34 2015 -0700
+
+    added welcome screen
+
+commit db99f2d9df4b2288d29a97d2d04a1703b4f3c107
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:55:35 2015 -0700
+
+:...skipping...
+commit d851edda3009332dd5d3f8f949a102f279dad809 (HEAD -> master, origin/master, origin/HEAD)
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 21:03:04 2015 -0700
+
+    updated README for badge notification
+
+commit 7c8c3ccc2f4bb118a657f1f7a7ab4e163d1b7a30
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:57:08 2015 -0700
+
+    added level1
+
+commit 228389a54073ed1e6ec98e3bfa59039b416efd4d
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:56:34 2015 -0700
+
+    added welcome screen
+
+commit db99f2d9df4b2288d29a97d2d04a1703b4f3c107
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:55:35 2015 -0700
+
+    updated README
+:...skipping...
+commit d851edda3009332dd5d3f8f949a102f279dad809 (HEAD -> master, origin/master, origin/HEAD)
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 21:03:04 2015 -0700
+
+    updated README for badge notification
+
+commit 7c8c3ccc2f4bb118a657f1f7a7ab4e163d1b7a30
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:57:08 2015 -0700
+
+    added level1
+
+commit 228389a54073ed1e6ec98e3bfa59039b416efd4d
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:56:34 2015 -0700
+
+    added welcome screen
+
+commit db99f2d9df4b2288d29a97d2d04a1703b4f3c107
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:55:35 2015 -0700
+
+    updated README
+
+commit 640273807f9bac8af03575f82b788663d4b99927
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Wed Jun 10 20:55:07 2015 -0700
+
+    Hello World!
+
+commit 8cafb7c87b129686da362b14c3f3c750c1fe4bf5 (origin/vector, origin/map, origin/SteveJobs2014, origin/Kevin, origin/KenThompson2014, origin/Daniel, origin/BillGates2014)
+Author: Henry Garcia <hgarc014@ucr.edu>
+Date:   Sun Nov 30 18:29:35 2014 -0800
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+macbook-de-yaelin:git-game Yaelin$ git checkout 640273807f9bac8af03575f82b788663d4b99927
+Note: checking out '640273807f9bac8af03575f82b788663d4b99927'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 6402738... Hello World!
+macbook-de-yaelin:git-game Yaelin$ 
+macbook-de-yaelin:git-game Yaelin$ cat README.md
+git-game
+========
+
+Hello World!
+
+It looks like you have some knowledge about traversing commits!
+Well, let's get this party started!
+
+``Level 2``
+
+We want to get to a branch whose name is the answer to this riddle: 
+I am a creature that is smaller than man, but many times more in number. 
+In code, my appearance can be subtle and no matter where I am found, I am unwanted. 
+
+What am I?
+
+macbook-de-yaelin:git-game Yaelin$ git checkout bug spyder
+error: pathspec 'bug' did not match any file(s) known to git.
+error: pathspec 'spyder' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git checkout bug spider
+error: pathspec 'bug' did not match any file(s) known to git.
+error: pathspec 'spider' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git checkout spider
+error: pathspec 'spider' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git checkout spyder
+error: pathspec 'spyder' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git checkout bug
+Previous HEAD position was 6402738... Hello World!
+Branch 'bug' set up to track remote branch 'bug' from 'origin'.
+Switched to a new branch 'bug'
+macbook-de-yaelin:git-game Yaelin$ cat README.md
+git-game
+========
+
+Congratulations, it looks like you found the "bug."
+When you work with other programmers on the same project, bugs are bound to appear.
+One way to create bugs is by changing code that you did not write without understanding what the code is doing.
+
+``Level 3``
+
+Sometimes we like to blame others for introducing bugs in our code. 
+Think you can find out who introduced a bug into our file cool.cpp? 
+We think he had something to do with the development of git.
+And from what we hear he also made a branch under his name.
+Checkout to that branch after you find out who the culprit is. 
+
+If you are still confused, this link might [help](http://git-scm.com/docs/git-blame)
+
+macbook-de-yaelin:git-game Yaelin$ git log --graph
+* commit 98491edbe9121d1a2b521c5ea658b191a0c54224 (HEAD -> bug, origin/bug)
+| Author: Calvin Kwan <hkwan003@users.noreply.github.com>
+| Date:   Wed Jun 10 15:36:41 2015 -0700
+| 
+|     Update README.md
+|     
+|     changed link for better wording
+| 
+* commit b0405546b61cf9f7750be00aab685f799066c725
+| Author: Calvin Kwan <hkwan003@ucr.edu>
+| Date:   Mon Jun 8 22:04:45 2015 -0700
+| 
+|     added git blame resoure
+| 
+* commit fb6fd3074a3277c277ecd9f31bbb2316fcbe48c8
+| Author: Calvin Kwan <hkwan003@ucr.edu>
+| Date:   Mon Jun 8 21:35:56 2015 -0700
+| 
+|     level 3
+| 
+* commit d4827d27af0af2fce8575230486efc3d89513d9d
+| Author: Henry Garcia <hgarc014@ucr.edu>
+| Date:   Fri Dec 19 10:01:21 2014 -0800
+| 
+|     updated remember
+| 
+* commit b2471d3681090a2187d1598f07cdce97dcd62205
+| Author: Henry Garcia <hgarc014@ucr.edu>
+| Date:   Fri Dec 19 09:33:43 2014 -0800
+| 
+|     updated README
+| 
+* commit 19e12509e302a3f00a9bb082c18cd90eb4a93887
+| Author: Henry Garcia <hgarc014@ucr.edu>
+| Date:   Fri Dec 12 18:44:52 2014 -0800
+| 
+|     updated README
+| 
+* commit 3922a6d86ec4b0ea00c7b7414e96ffd3b2f65f45
+| Author: LinusTorvalds2014 <linustorvalds2014@gmail.com>
+| Date:   Tue Dec 9 12:37:10 2014 -0800
+| 
+|      update
+| 
+* commit 837781f88af8f64dbdd51bf0ba402d9c1f123556
+| Author: Henry Garcia <hgarc014@ucr.edu>
+| Date:   Tue Dec 9 11:47:34 2014 -0800
+| 
+|     added remember
+| 
+* commit ce59bbfd5b04ece742e799c68bf94af2c46281d4
+| Author: Henry Garcia <hgarc014@ucr.edu>
+| Date:   Mon Dec 8 18:22:35 2014 -0800
+| 
+|     added cool.cpp and updated README
+| 
+* commit 8cafb7c87b129686da362b14c3f3c750c1fe4bf5 (origin/vector, origin/map, origin/SteveJobs2014, origin/Kevin, origin/KenThompson2014, origin/Daniel, origin/BillGates2014)
+  Author: Henry Garcia <hgarc014@ucr.edu>
+  Date:   Sun Nov 30 18:29:35 2014 -0800
+  
+      Initial commit
+macbook-de-yaelin:git-game Yaelin$ ls
+LICENSE		README.md	cool.cpp	git-game	remember
+macbook-de-yaelin:git-game Yaelin$ git blame remember
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    1) cweJIY8GOo18Usi5ykA4nmhBRd4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    1) cweJIY8GOo18Usi5ykA4nmhBR
+0h 6mMpyy4nFY71IhgjGGr0rkY3uE tVTo j5XlwgLZZ PpRK Pwbnd7Z4bpQWc6sU700xfLTI63FbD DsKCQbUKG KS02qfurxMJ3mHHD8f6VhFUmY2rPD NjznQ8mnQvlNwAR1QsLDK Zjl1kGbWQBeGoOBwVMfa790ATCNg fR OLPA0hi7OW N4jUN26mBIwQVhVtteDSDSr OVfhvUwb7ydODX7R2no xxTmrD5IFUXIB8dDhR lpSFaRcbF2up wrWA J2acmA28c2 NhE Bqj7ntV67GTHpVBSwO
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    2) yjFx0zth5X4MdCa9Fs3Oe iVA9eM EIR0qjJm mvDuBzrMmnmCnDJkiGhlinajssn uPUXvmFuOYYT0Om emdjSh6yGV7voAYNxEd9HiOzZ14J2 H1zIYQC2AuOwtNMZ7eVaJaJ74t 0oKbPMGNjB ZAzClhJi wp6NBukP26Knx8b7lDl7Dvu5D5Eq ZV5CGHbx1HkqCaID6Gs0 TVequlg04MGvoNk3N ExILKkHVH l2dXzywBGVrciD SWnUcwTncTmQG49TGYmzFBwsSPCr3 S5HJzX hB7w9fPR67 tgCy8bgX7MgXJG4OgJ3ufI2 2iRUGe5dm7TBz3uq2r mmPCDebiXmice0627lxtRoJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    3) LbJ6coLbV6L7ZYlBit2xlKpe7nUt rVdYPDlQMX 01bmq1 QsNPAmcNN 975Mm2QO8G SVMCr8aIcDzPZMV5F h1jAvnO41HT GxOpDvMsxzwWTiVsbDGUcZfJ4PhOdY PuXU8ZMjcPkdSQZ6BUz7DQHu xn39BYjrQlLOrAR4o6jNyysoBm3PJc alHeZrEIYh4 YAxZCMvQG1aBw gBy29dy2027hrnHNDFnoKE4KDT AltZrGhbQX8pRvdcmbyeIJN3F OiewInS6JYNyT2 SmOeDW4DTXN9aEcH78zXRVgx MyOkgZCGYvhyeKgG1 wLq6cZ15vXsOUJp51t48Knq1V89MN E 86t4UtBGocAmylteZjMNawNaqWK
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    4) w6UpYwJzzGLrqEp iaTnrzqsCEca7 pUPjo6vOgx 7Y NAawYsW4z o6uME0 enJg93ZOfeCBrhhoh0JNCZq X0VvpnLarFffTSZK5S jeZsw j3ejOHpcTqrObTozHfE2cGd6 qaME9qhPeMwXHbVR1XCT0 Uw6PTAKnuA0X5tbf 4gavyAUiZV7tQkYFk9qpI7PKFnFox 7qKxPosJsQhbsw2X ezqgYUp05tiPMp KyenwpVDaxerUQ4T5qqB2s9YrHwt3U UvFdxmtLGCI7HngieVe8sv3 gWhQQ4igTyN3i2gikgHQSMgH6V5 reSgsnZPO34ntwYamz52x 80FH4l
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    5) yfziDIYrPeoaoFwg XKcauSMJ288lS1iaZlF3vPVlLfCBT mGA9x8pD76Q4VW593h6L YYzYmqtcGBMJf8S5o7lW5JO2PoEA Nnc oRp34S z r0NfQG98DTw8NXDvIvqo26K vUw WUt ZFlZJe2fsECsqkfPsPPVxVgluoYE txXWySqLR 9FT6 3wSZcUQA 6Fq3SxZHTWsXIJW8Vk20pWCgo1 FfYm1bPtw5XAcluUgUvPehYjRH wBRbacmx4Vqj9g9trxVOV tk78u2fYZLKD Ziq83MxP0fozr2ilzqkN02jVPSmbq QAK9y
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    6) hJ6LpkyIdOYwHZ9 5qnto6HwdXwsU4ng3BglcoPBClU FHiQVsQjPJddPW wYk8DjIIQx 0DECRzkmx95 SuU916Entl99h9cAZvXV 6jLrp QfKs1rcQF PrYRNWNYZ9OJLxAk86YNWG3vD 2WLAQpQl4mwbwwBIKCzlkdeNBA xd0JNfgY4DNo2D3rIc Sbuprw2p 4HasRkwmbpPrVr5ss2rqRv QAGuuz2rtxaVjgJyNRqzWvWe kH jWP4AWuFhgYrXe0 1b fz06ntmvUgEYGOuKj WJTAm 9bvvLFKaMusNzmv2vjCo9QUtoB
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    7) O8eTYcEN8BWHa8RcCRVM8 gnq0eBVM4xaiboTWspm8n8 DhCBlrh 2tYFm1m5 CqcsLd9IfLiwAf0YN LJXbznoPCbATMpR07r k8ZU4MnOK GeOZmu7Id78 yuGDoZ1DyVxTaW Dk3rluWhnx88KglsYNs3xUO mWo7RWnIiC vDZERL p TaTX 1NSPzD92VGjK6 pFSSwkdvgHKYDXHqcIhSLoCOlTL AdIOXfICPU RxfycjZsBZnVisiCLmou uG9Eo5DsbsJD9lA 4DN2fCZJ929tDZEn
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    8) 4k GPKakBZ7FJdFBqqC GRI7h0fd IBMhul3gv17w7pg 3ux3egbcS1CndK3o3Ky nKEPee hVUtKQGPZeoFTWlyk813k2WKE 1hYOaLALfdodRiTZiGGhJZwv lu0VsPRWHGJ Uon8oFM7Yu556 1lN5RGp57Kj6exlZ3rR 1xmqIDcAeN3c2tXhBAA6IziOnYC4B ZttZJgMcm jSpRBtO5UHeLJQzRxPd tDtEO i7otuKny823dGEciqJv3zltTI1 q0KsM65abWBDXgM0ZGVt4 IHmNnEFNEMlwSSPyFQK5Mh wbubpZcoyHH76ExLh8BhLN EWV47CE8LNFXEwwyxWxyBRA
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800    9) P7e QOdtXgctG6M8yJx f33eE lAUwXZxbU4kea5 y 417XSY dXym6tJaf2 gjQLzIpYAdeR2ry TG VNN0HuRQS a9tEwJ e7e8QHP3mvzE4HWk7 6EVi opjKTqDrKyk56zb SVEpi yo8JM9oiFoCP6nEjdYSb nZD yuHNpy F7EtYQnZDefxzndWAPRXQA 0epPBQsUb12d5E8al2et7gx
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   10) ItO 0l9MiBFtNT1PR7qJM0ztjSXVV5d 9 bB84lme0NS tLogaQcjwUhQGbRbint9bZ f0FVmktYDfa7u3Zs2E dDUgmSGlqzMHf5r8JaHVGyY1UlPaz 8S3hNe956EFvFANK HRmtR47nzDyMc3FC0GKy74504 OU8DkL1ptSR6Ugi cwJ Wk4GCtCiZFjor cHAMVcUuvIuGo PDuKbkkW8N2Q IkIov94IJaWJyhqFLdRoV UjsC2szrlG43J2x51cjvxWgi 6lBQ7ibfvH cA GU6SlMlhHV JQq4o1J4vbXJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   11) NwMcVfzitzsTpDbx0yucr 0QsnOxDWpJ lMP YnnSyqvmVLisWClhUNfWUcJf 9FXey2psM8c06Y8W9o 02ssRD9JHi1uXjGZEA LpqkiyrmVY4 FVnkq f6kDUwHfOA9M34K861RX0d ZRdcAfm5CdHVVvqcrtOMWySRf033 Lc11MmroHabNrl17YMBKt6FfS5UmYn 3oPNTIWb2uau6tRQ3 ktDFW78mPOv25Vpkpi9vUO H2nl499BkxuBZ3M LNi4QYkXMX2B3823rC 0eSoN 1B b6JHmi38ytbcyd3UzA CmgqpZTGu CchBDIA1q
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   12) LCsiW2J r9FZ YNzA 1sT8rDHwwRj2WXrzpI2Em 5PkoNjMQLRSfcYHkdm9lWH3ctrE fTrRUTr sCUn888qeiIk1CtYbYF RvshRxzuml9elqk1r yUmDlQNFc3D7ie5Bah38lN 49pfwDI6aBR9HVJdUrt E2DEx8oTUgOQGqjbUv E9A6CVbsJjEBcbT5eZliWTW 0SqheL6 4p3C f RNbPHW0yt2N szpNIlTA0T1vvwPHh4wvsOhXabXg xM IrrdmNzmhrZIIGIJc8dEMP Z5HLnqK6KG5TY6s5UVF9h5w4s
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   13) KpFZb VSb 84hzDP mHlzAxMTtvAPDNVPhgoS9of FtjB17QF8YdeFKU32xv1qLLN JbXZ821vG1ipoTYgEsljHe0WFU YCXimksm1JV mtBSKQrlM TL d pGp3g3X0hR5FVx5WeL5KAMl4t dPojIwAIzrRAO0KI0qUijj8snt iuez WxbCnyilmoFJg7gI5PFm2I mRp9d6RKZ20RVVXkWt9OjfHxQ4h 9fYMl9lyf6E08H9u bAx50mkrejQiKvzrMC7k0 lUWE7bWD0WIpVnpJAuFxV8GDk WUosvN20M6tv5rVGy3nbfw3JoFu wWyApcBKBOSsHQ6rKID7M34npkXJe3
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   14) nU3aQ43W2DC0cxyVjndb6Qs8 bs00PUmJ207j0L8uQC3 L1bcs1m2hTrcQ1Xke9AP2tdbZh4Ki1 qD9ge5D yVSKrM4C49Fc xONUqOAKB5E JYBZx HLQIBccoXd1By3K6qrQyZR 6mqaM2zhqdAhoX FNoSPYmzA4Jp6Bknxd970n3TswEKH GYIUbSTn9aNAgPa4RDBOo6bb kt6omxcczypYEK1WLFmeHYwIob Yx8eNpdUKn9mPOJQNKsZcAsjKDdRS :
+HVGyY1UlPaz 8S3hNe956EFvFANK HRmtR47nzDyMc3FC0GKy74504 OU8DkL1ptSR6Ugi cwJ Wk4GCtCiZFjor cHAMVcUuvIuGo PDuKbkkW8N2Q IkIov94IJaWJyhqFLdRoV UjsC2szrlG43J2x51cjvxWgi 6lBQ7ibfvH cA GU6SlMlhHV JQq4o1J4vbXJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   11) NwMcVfzitzsTpDbx0yucr 0QsnOxDWpJ lMP YnnSyqvmVLisWClhUNfWUcJf 9FXey2psM8c06Y8W9o 02ssRD9JHi1uXjGZEA LpqkiyrmVY4 FVnkq f6kDUwHfOA9M34K861RX0d ZRdcAfm5CdHVVvqcrtOMWySRf033 Lc11MmroHabNrl17YMBKt6FfS5UmYn 3oPNTIWb2uau6tRQ3 ktDFW78mPOv25Vpkpi9vUO H2nl499BkxuBZ3M LNi4QYkXMX2B3823rC 0eSoN 1B b6JHmi38ytbcyd3UzA CmgqpZTGu CchBDIA1q
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   12) LCsiW2J r9FZ YNzA 1sT8rDHwwRj2WXrzpI2Em 5PkoNjMQLRSfcYHkdm9lWH3ctrE fTrRUTr sCUn888qeiIk1CtYbYF RvshRxzuml9elqk1r yUmDlQNFc3D7ie5Bah38lN 49pfwDI6aBR9HVJdUrt E2DEx8oTUgOQGqjbUv E9A6CVbsJjEBcbT5eZliWTW 0SqheL6 4p3C f RNbPHW0yt2N szpNIlTA0T1vvwPHh4wvsOhXabXg xM IrrdmNzmhrZIIGIJc8dEMP Z5HLnqK6KG5TY6s5UVF9h5w4s
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   13) KpFZb VSb 84hzDP mHlzAxMTtvAPDNVPhgoS9of FtjB17QF8YdeFKU32xv1qLLN JbXZ821vG1ipoTYgEsljHe0WFU YCXimksm1JV mtBSKQrlM TL d pGp3g3X0hR5FVx5WeL5KAMl4t dPojIwAIzrRAO0KI0qUijj8snt iuez WxbCnyilmoFJg7gI5PFm2I mRp9d6RKZ20RVVXkWt9OjfHxQ4h 9fYMl9lyf6E08H9u bAx50mkrejQiKvzrMC7k0 lUWE7bWD0WIpVnpJAuFxV8GDk WUosvN20M6tv5rVGy3nbfw3JoFu wWyApcBKBOSsHQ6rKID7M34npkXJe3
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   14) nU3aQ43W2DC0cxyVjndb6Qs8 bs00PUmJ207j0L8uQC3 L1bcs1m2hTrcQ1Xke9AP2tdbZh4Ki1 qD9ge5D yVSKrM4C49Fc xONUqOAKB5E JYBZx HLQIBccoXd1By3K6qrQyZR 6mqaM2zhqdAhoX FNoSPYmzA4Jp6Bknxd970n3TswEKH GYIUbSTn9aNAgPa4RDBOo6bb kt6omxcczypYEK1WLFmeHYwIob Yx8eNpdUKn9mPOJQNKsZcAsjKDdRS tvmsp4g3Bim8edUGapkbM jcX7I 8cJy9rcg z:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HVGyY1UlPaz 8S3hNe956EFvFANK HRmtR47nzDyMc3FC0GKy74504 OU8DkL1ptSR6Ugi cwJ Wk4GCtCiZFjor cHAMVcUuvIuGo PDuKbkkW8N2Q IkIov94IJaWJyhqFLdRoV UjsC2szrlG43J2x51cjvxWgi 6lBQ7ibfvH cA GU6SlMlhHV JQq4o1J4vbXJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   11) NwMcVfzitzsTpDbx0yucr 0QsnOxDWpJ lMP YnnSyqvmVLisWClhUNfWUcJf 9FXey2psM8c06Y8W9o 02ssRD9JHi1uXjGZEA LpqkiyrmVY4 FVnkq f6kDUwHfOA9M34K861RX0d ZRdcAfm5CdHVVvqcrtOMWySRf033 Lc11MmroHabNrl17YMBKt6FfS5UmYn 3oPNTIWb2uau6tRQ3 ktDFW78mPOv25Vpkpi9vUO H2nl499BkxuBZ3M LNi4QYkXMX2B3823rC 0eSoN 1B b6JHmi38ytbcyd3UzA CmgqpZTGu CchBDIA1q
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   12) LCsiW2J r9FZ YNzA 1sT8rDHwwRj2WXrzpI2Em 5PkoNjMQLRSfcYHkdm9lWH3ctrE fTrRUTr sCUn888qeiIk1CtYbYF RvshRxzuml9elqk1r yUmDlQNFc3D7ie5Bah38lN 49pfwDI6aBR9HVJdUrt E2DEx8oTUgOQGqjbUv E9A6CVbsJjEBcbT5eZliWTW 0SqheL6 4p3C f RNbPHW0yt2N szpNIlTA0T1vvwPHh4wvsOhXabXg xM IrrdmNzmhrZIIGIJc8dEMP Z5HLnqK6KG5TY6s5UVF9h5w4s
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   13) KpFZb VSb 84hzDP mHlzAxMTtvAPDNVPhgoS9of FtjB17QF8YdeFKU32xv1qLLN JbXZ821vG1ipoTYgEsljHe0WFU YCXimksm1JV mtBSKQrlM TL d pGp3g3X0hR5FVx5WeL5KAMl4t dPojIwAIzrRAO0KI0qUijj8snt iuez WxbCnyilmoFJg7gI5PFm2I mRp9d6RKZ20RVVXkWt9OjfHxQ4h 9fYMl9lyf6E08H9u bAx50mkrejQiKvzrMC7k0 lUWE7bWD0WIpVnpJAuFxV8GDk WUosvN20M6tv5rVGy3nbfw3JoFu wWyApcBKBOSsHQ6rKID7M34npkXJe3
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   14) nU3aQ43W2DC0cxyVjndb6Qs8 bs00PUmJ207j0L8uQC3 L1bcs1m2hTrcQ1Xke9AP2tdbZh4Ki1 qD9ge5D yVSKrM4C49Fc xONUqOAKB5E JYBZx HLQIBccoXd1By3K6qrQyZR 6mqaM2zhqdAhoX FNoSPYmzA4Jp6Bknxd970n3TswEKH GYIUbSTn9aNAgPa4RDBOo6bb kt6omxcczypYEK1WLFmeHYwIob Yx8eNpdUKn9mPOJQNKsZcAsjKDdRS tvmsp4g3Bim8edUGapkbM jcX7I 8cJy9rcg zaiU5njR4tiH3hoE08EZUCogc xo6nPSgSHyZ5AFo3J p1rdyI6YJr8kc4lDPqa62UF J0cX0cu627YgIcZ7OS5K
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   15) iBX1KRfLosIC3JORnnGkqT7JwTro fS7iAZEeloXAW94XumL7iGGV MiNb7DsG2itf j83aVj 5AfiOXVNBk7QlaQYBAyS1G5 cICe1Bu5fX4pAkUuSgxKuPHsAfJD oI5DDvqUBIcogCOYaZaJ aJ1v2VCCcSiW3oFWsZuJDvdY0LT5Uu u6YGc2dtx1C klielhnCvmfy0YHtSwo58bNPwVl myXelIQmuMjxUUpUyrsF4eLDMXwUa voeIa1nHe4NUcs1VAs6DjcqCNQc rAjMAefH490ZTA kdZsJc1Yss7i1AaV5CSy2r2MO HLfiUeF3RJ4kWZoN2eEml5yjj ZO7q9DYdWXubtpqSwTCpTvwxe c4MejeN5HaqFgD8rug3il3xaeNeNEz tWq2zFjVBAmOyTottPZ gpZbOPqDgwe56cMm2KKpV XrR28BkCE2y4wMW6ovWqcr
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   16) UL2dSTtbWUFSvVOsctjDb7 tC 1FLNqYYFg67PxpekVU k TilN9XS2nsz3ghxd3q2h Z42mGPVUIbSVlILaw QG mRVogy2jhree1Z tfvP aZORhtlgRqM5i h7b0R8H2xdajO 3PpL 5o H6ag qIzxOCnE93O37udp7ffM0SM9waQ mT0g68CegeAkW w7uNYzqMnUZh9 x8UHNQBLh 3EubXletSoqhrwbj0PkdIQxrra r9KdrbL0VC1wfbl
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   17) X8YThLoCU639gRepOmMo5xA0GKTrK QSTTSn1xV0NjX3tn9W8Fa23JT8tg QZHdOEsRM8LsLQW03fvfGrskOBItFu wOdJsohn5dZ4LDC5kiPJ0EuB gQ bqyAyoco0GohaEsoeb 138BJAt7JXutMUOspy7jv L2sKBck8h2rU BqyWBVWiAscMZ3ckYYVyCu5La JTdGbb3qFIpzdfqRcSy 2lMyLYzk QGSZf5JcVxiequ6l1q05z7F9 cLlDR2K9Z TLjdsgYoLUvJTF1B8oHjiUm6fuadJw RULvsPvHKNekPmU2o0FwUCCozgzpo 4jAVbxj uzW6q5ZVPrdg4gbHGbT 31aDpHDa1Bn8W8jPUi2cUmt2VK4 tIsmiwYFX1EP81wWQRyjvkVm0z IAEHzs3R5Usfop
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   18) lHTI8EJPfvPHrfguZz0mym5sEVRQF Qn4dsng23lcftLN3VEp8r hkFPz4yv E Rd8D3r Wl7UgOSVvtYrSo wsNaWvfqRgYEhx8sW2AB1 rGclWdaNdyYZp917kJs oU9cjCWSsx 8o1aBXHH1u uwV3NeIjsWaD MZXMkY7aEG2fDJ1m1Agz APcSrWAMZGIBVzdJbV1kLleE6i cPURYvspgXSCaM09RXnk70GPv isY5gFWHERs YgKHmqm8V0CvlxFZkXCWR0YOoy o Dx6BP9i6q 3yhz7D9dCBL7KAu IeAxJZq4
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   19) uWczFk519WeBTU4oGaOmrw 2e3fS9yVyn8RaH Il4Azq8fAzVz24WoZ853 2hnAA9jL9TlyekpkGi593pKOyJ4N essM35W YKmRpsMqaKbmBZGRgEwXgTIqr tbiKL0 TufuLeMwYsA0vhpIxBvC 4zWOaX2s dLxQRnKgkFfsgE1H0 UVairchNFDKGkm zTN2edVGfrHBluKA qawMk MonAeGdBiIdSz8s1Nm0gCe Lc0HBlsLNUDHFYW8vf3sd4Zv0s NAm4KvyKQzcLijU9CmjgjMATNgf5j bp6YMjUP710VxKYxyZWE GetgrQMTj01Dtlyn1bRrJo kAu3uHK2xReloQzMC cDKkC7gUyaAm0
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   20) DRZWx9Kc x8ngz1aScaCf4 uwpWmVW7DcmkE LUfYYoid13KrXdQXN6vKvc66s VAwkxAPMJgdb6r1 62IBRbUDSM0G xF1A ystEm m eGaprFT 77k9GFpCmp3sFx9O6bcQ71rNaleDu 5reqA UXa hqlfwOkvG5at6FaoiMHUbUrwZH 8NI7RVYqvbS57O x5HP1QICuoTX3bduIwh bBuWCySibx8Ltgr6g9JmBmRY2N 5EL07oVk8 C L8pYtKAbdaeV
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   21) oC4SSf22PlbLeuRZEgvjA4m1 QZsYNNsliQJL3X3IznWk8J16bIJVrw h7dtlS NgmwGbTqKFt40kDhKEP80SI7Q 70Uw6f9r7HCDLmyt6CJH2 nqybvZuI7kU5KcM9JMV1MUgCdQQv QS 1mNIg2vxCnghKAjWEWaxXk8QID2wP ZxVrQBLVqWF6lUE v3I1pM b1WXLfRLpzMr3y3m8vnge U7l WKRkNTKW GAv6kWBQTQ2G SSegykfIJD9syIqdMSQgSD5m1c kDq4RFwIZh pZXhtRyHpRdOe1ZIM LVfO tGGg1sa0vSxG4KDHwFJcbX0IYGV 2tkmbl16pupD5p3yaKzvwV6
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   22) 0126yhElyk LKH2N1Mj85z PpUtq505HGAegzR rhfz5Ei7jZu DjaUUgX l4rroA1sfnDuzgLNc qL8 et sP6tYJksfF2AX4Um uYzGNAh0P2mBa5DhNcybK reAjhnXYY2NPN6rzhT0LErM9F5u1 wxn7yC Tyi U06 hZe5j7YpBQVtwWwcUmNyGoWFn7Vt nsQ2H2rX6GDmWxfn3IaVVakC5xsq zX00LSFRR3ao0SCQLqGZD EcPyj8jofANB 0f2JE2hf6vNvVo 1VTNv24vIWqVAOxyBTihTmdM5
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   23) 3XopVxdb0hxQa mP2x UvW1Dm1847 yWqV2eX9QCljQFT Yo5HHOy3cQI3 P94p7r7RlBRaNXeWfmtlDdr40K3 uhlKZjR1h FXGgqk2cTS1VIVVi7xU mZSoR HBvpSP6VAK lMYG1H6 GNhHtqzMlViso BJXpZh2 hQqHNkd1gBVRjTC ZSC Cwm29WTfGyU9ot I6ag7l4AoSVkfjlr 9j4x2U2 fvcJAcZy0HBkjEo5FLeitF0jqPTo Vs1sCkwmfZkue
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   24) 7DqI nuJvP75Ij0k8CKBH18uWfqDIs5 tlZZISWb0hgt7oQgbf Z QO 4 Q8JnSsPLqvVXc eu4VW889m5TUQZFIKtv8 XOgPi0SWeCazbvU qfoeXvj2qkyFwxo40gwU4 6sJ 2X5bG42TEVv m21KlA8O8xNTphwHhp0qn Z4BCOc1kswkxxBagBGIN LNPNSjEwmDv8bmZ 0c36SLnAZSzUTWrsnSyC2fFzJ OwNS8U4o8 dmAPepEYxVtc7Ibn xcg 1
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   25) GbgETS18GGfyngS U8kXmM3cVZc JOLD S2fv3DeALseRn2x5BpfDetJvi 9WJ0LIc1gbmVMb 00fxaYRfhgmi R0tZlFP6EboAbgScmAmel nJQ1ySmtc4a 0bV3JVvxTowDL908s4ix KZw8J2jBN0qG8o u4ClxZ8 ZSdkQ9D36A Z5Xzs03yTQbZNVG9pG2ZzXzJ fDjHTQ9I9Xng eYxVA41HEC6JL6LxiN5 r4khr E jluTwmrbaHI50VBb6 GRoDXCvTicL IztHuv
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   26) 1o IXVPFWI13WyVKxmAVls9LCM1Gz7nhL oOsl0t uERuRlQ0YIir jdf06ep6lWYMgjf2fGeJGZqAolpor uod whbWmCdHASs18gvnHnDYrR3iylXAdn JtkC91R7 tCis3 VWjvmfLy97jsZOn7UQJFo9ytMaw uDlQ7YUlJYSeKj4011jFXVGh LhxFBa33FzgucseKt2eCO AoFvQIJgLSkQ3CqDxMbuYJ zuopawauvwNDO75Q5Ge8kt1Vm4 21h ioWRmIoePlJaSp jiIIFfwp47GxeODLU Esqr6ljkdsr0kUXWHEPPYvnqi rJy9KcxrXqjQ9ND5RkKYOAR0x4M sisBzYWY
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   27) faeYyQAgIC 0sqnWtHilx5 G BF4vfi 9 hdt3IvUL FotnJGywnJ H4E 3nwj7r0N2 UH2A3noabDUX7S5gVfcmw 87DJh6ZvkxPKKpIy 4lqOrhlh1MaWRgzqR6b pIp3bMFk 5u7NCVsxxtpG2KyzMh HhtcN417JHVIqcDmc3wJ Kpyu3AqT25Yes qvEv9hBwzrdE1E ET7lo4srGWyyAPsrCsrYwy3fht 8gMXcRDRel8mjUA7RflmgM 6oR1L
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   28) 1uR6C1Vfee1wkgyBO3ThjCk5R 1p1QnUfNqkK22uYEwst8VpI YawoYSJq5loocpiJfiWZUqLRAOWvhP hIRAsILZWtexaaEpDs66kLrWPeTw jaYW9qynWHEEexJ7eh7akKFJ RGkM4d9Hl0NsKCAqJbUBMmo4vyy FVwNKw8MeYQHTZRco sSoHztmekwMerJbvYLD6V93dOSal V9L yEZAd3ygd UEZ8yv6oBlY4v9TKAtxzlHURlh86 XSsqCg3XoEexd5ofjlfVO 8SaCl61fUINbtbzp8X dg64QGlkyPbcPQZ1S m9S3LHVmo7 LwZJFtVZsVN5XTroPeg3f8nFpjbt LCZG yFTNzJBO71743Bagiv1qJMif ec1n5IKNDjgVk5 bSyC4XAyaOi
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   29) keT R8bhpWTBBswP1 2QarbFWBiBlhwHzBWCDF36z9 XBMRAVFi43F4rZe6UV afKKwVjSPTaLP 1Q8n r2JDEgsl5OUiUnhZZ9P1Jnwf0Sxh CxseNvI b8yIOoHOeG0RNCaOKGw nx7A5t 5GqoOnEKSYGqGB nli65LE4SkzQnu SbKPQj2gTuIBOgzO8R 2PjCoolR6SNQgBBpecO149DSAfc 0kAKSKr5byP3NN 3zKoKR2xWqSSTJMdsyfpwyf0JZnl o5nZAywK mENDD91CrhAGRrFtyrGjhJIosu4T 0UAORvRIM8Cu0WklkN MJzNwl9RtsRBX3Kp7K6Z
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   30) bPr9Jl3sTSmlyWLk oNR3ZragXZTw51Xj6RsnAcxVPv MzjD2NvGuLdoVn5HUbNbibh HN5FTydxVZZ apLr7E isbvVF1n7vW3 bVniD393BvQdorETdSTgcc JgarK3yEF8OvPo4AiD jr Vg5FihMp EfpyUk1TnoN5Xn4kfUd F2xTvHDeoqwnhYcW7sQ7UlCyEoY6 03GSknhHBag FJ1BVLk0zmxULmE4G8zJEg00 aG1tzoTYjI pJdA g8vRy4F iE06LbQgC0uNcxGYBW8C vS5YZuU64o7Nl6r13zeaI MG4eWwJEoMmFGaKxgfzWnn9Kal
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   31) PFnPp9 9hnZiTMzv1NLd2BfwyPMgYdqdL 7g3LvjT4wK7ho s4Nbg4QoRfKcYHZWBhub Fko7GMDgpVuxpqHThtfKOZpmRFp 889 sa6PwDgQ5TUb0zk92GXq0clF kjcD mwyu9F4XJEY2yw5U LOoMWOAvfPyVvpWHsz9KP ziwABCyWKlkFu9ZVVvlgu6bBZs AoQuRpfW76eI pvttp7dVYgDQPcIpdA8DQq MjFVDuY2uCgFm nFJUNns6vk n13vfu mI4N9SKalXL2prNNaesK 22XMQAcDphzIRR3CH3sbxlUQrua tL4p7HStXK9 JGtNzSOpefGHQnWVYLRBRVdv27G
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   32) IUWm qCkUoDE8o EgoBNa8Db5JfUxmNFxS79zQmSJIBC R4bPRevH2UPp8lJ02m0D WPFM6TaedBK3DjficnQ0t8MRW4z oq0qpiIMxN9AUMHLi6V3 HsLcf68lQ1xs6d0waAupEh Y75QalqmxgIViAByr2pEJN9VGaiZL hOZydx VvUw4ztbV9l0FPg7hNSXal bmvstYg7oaWhfNt UQA8U SZ8CaAN9YFGA5MFO0 Ygn P01VHXhH 3aucjuDTimlmqS309pJ CiMb8jJia HXAmTysuiHoAMO4JUBMNidd jsumDvTa mw3cHSRPBIKw0wwfMBrX
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   33) 34BdpDzMIBFmLNoM4VWkqErxU zCcOTUARvTWKwj90tR65Mtr4diq LSIUq DYrYWZVKWz RSqoJ0g7XKzaOcSsRytlZWHYkEm xISG9OIxoYhV2jBZjZxkNY9vx x2bxAIs3SHtyx6ncP7P1L 00SrT3S6ltig2tRttvk17cG9 oSBNsKngGG9AmMtkyfbHfKwF otcz6cq9Px85sp5ea JaRfwXM Kq hbXjIJL VmQpGY2aV7Xw5kqUSTC6c9g50G OkJ8Hx7Ryn995f3V0W9quGgu39tBIj hx6seaYwF1nm m3vE8hQzk9yFC0Gi5C9XyeP wwa IKfpVPORQd000K7dYn9 NkVHP3OnaUwksagsau0fW1PT5n77Z
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   34) 5gEgU6oilDgBB48Edb f0Q3zJn4Ijl0dVAuOSsJxdq9 UCQK O28czzNgYg kG0AOxv j2TbOf6 EJ Kg mDk7QobWI1TDPS0q0oCTP lG6aUFS7yu9GJPHJik RhWpJQGbGaWJ 8xdfs2mgjTXIcEPQXkX1S tCzb5WlQxauk4aO8lXOUK s 8Is0pEB2 BFN9lpzPZpfpch7mbPNRF2 CND7xjTpJHa8e YJeflH8n sAdDgGRBhSX 8PwDvbHaC9WK98d7nuihmNQ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   35) NWuJHgV5qJLICLSUn H xvr vVH7cxcRKpMzD ETN3gFl3A6BcOstKFFGYObvkcAF5M 4yV7CaMRt4O4 eEY9UxMOB rwF72 8egbz Smp8KJPt1FitBgQ eGc1vY9eHkxJYfIem 8PE4B m0Mqy6OVZ qkRNCgbu0LXWwOsyf e0jeLd JWvVcw9qb3GyJS nq0bytONOJYd5NeEtep3wtj pHtPb0tAqNrQ8yBrFOYhixQcp9g1Kc aV81Bh GJww7RfL0ZLJ4Tl06HcEvJetoOz
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   36) SqM7QEF8ahsE JdeNuUSDZJp33CXCR1ArsMdB3pF HoeKO9ni7H I5 JCO5PvELxQ1xjoJB TqMyp YiAElLcrOnUzm5sCwZBkMdG6T tOc9YGRa1UHP7PcZVueYYVcjhD7z3u xUhWfajDjJnxFPB1HB2MlvP7AmND1 dRC9UtbI1k9Zi034XOUYLUV2C55u V xysW6Yy4mbjeE4sP9 VVwvGoRVHwi 7rzEQI4Y06oZxbY cts7kaKroxZxMDfQRXV eOpYYnW7 H7BmKAFCmpwJ6BGjMhtKxp7Tq 5sALQuq 1SCBcDFYp9rCi jOn1AKnNTXtbPAZoc2ITnJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   37) I G70uNrsRfCLQsyHDFjqwW6HwuZ5 x1FutC 9Y5fG 93 t 8vN1pEp 1i Ff9qcYXtsbYL6xg4mhW8CjtNTo0I Eke5sBtTf0W0tcTNsj44UQTBqXwH3h hdU h9 S6rXsqfQywdng64FMq2Y6je gApdbGDQdVIDdeWEsfsBGl2mEV u21VKurssGr0m6nnC4fp759id oqxdaXBP5mF4SiQHvyDsh YxJf0OCWZPLtZUBlhG3zU6wOu L1yv6Zs8BOBXzz1E49dQ2hOXyIZ7 UX8CXdRbx7Kc8Ngk1kb7J wemfIK2
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   38) v nPHXxFdKCcg zD1YinU7jdnV yjsM69mP4sFo lobjQEqGIhskbKskuuxLBiw2cd1hI 8qVzst68zbK2 m8oPozHlshaqVWSAY5gairtMs TjLtgKk hI27t gtKpPETn9j7fs3QeVV MyX67S nTvgGEOKgBvhCyOEJIpSy nsWe5Hb7R5NcBMG8blE Y VKHuVZB0 jUt0PcO3QfyanDr3L81iX CPKcB5KTX1sL9iSoY6J7dAVDC rcl xLgcmdvpPf d7ld
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   39) feGfe4Jqgr aYdI3Rvvx1bjCFfBH2rc LQOSAQcWpptfreBtbZaHjN9F cHnJXj G1vcg5CbEYJQyapLVuUIbHhkScy5 LhsjFI5Vn7A IMEsO0BOVGHY gDx6 Pu8N5lx149jRtN960 XVeONr tmvy8Efbq1198 N39UtNyHg0Dq 7BHhpxAYSgTUnt by57 kEJO19HCnX4tdD0IgDGl JbFk3jmkGZzlgnQtxw Pgc8KKTpW8Zfo 5mZ0Sul8dHxYLwveq0p6uuSjWw QtQ8gDuJkaNhH5p1bEkLRc8SFskvm 8SHkizoz1UXzKUi4z3yu1a6BeM
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   40) NmVyLZKL9p wUbXpfcum7U QutlEsmL6Hvi2ls U6Fn QlMbP WRB ZgoRWPwjXISgFAF 90pWL4scrJmZcvTfOGOCsHHupsvu Fl05MjOOaN IqUmg 39FYqKqM5dA0swzbjRqqoLK VPYl31SHcozQjZKPcDhBEPItR3f WSP4dzAOs86M2hjkVrL iyge3lkl0XndJ UloEpwj z0ll CHf9OjURM0jn0kZAVQ7vqg2 R6LUT9x17ba 4V7KsQtN1gsxkH1 1s
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   41) dXb zmUGjV2oCPzimBXYQVhr HeadKC1DezYOVCLVqFBOVjReutGXvN gHHVyjJNFbfRjkDqiFPWWbj6ZlmP9 RE7VMDkdM8aLnxxVApzpH oj sgJSoiidOlsJWuBej MvgW23 vPwDi8G2or6egdImF RtVZh2s96Qo1aXVNFUoaG7tk5 MNp3qV9ElzBA3 PDrk8 pQ4EoUrAlsDM9L9KlMeMj5r XFzhAmBiFqQK5PfQbpnXtKb 2VEYWtF NM MjYUXALY2oaExWcvr Kox6vcuNy7i81B8zELH8w qnfWbGYAOT kjsOCzJONlADve46eLsazDrdT
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   42) 11e m6aDUEyECmTHtZqN7 NLkpyH VPMNZdLWenLLw00yAGaMiLR1d NSOVWhRcvujyfcAOgqQy9MXo Hac7EDEy5sjO7rY3mX8Gx6mXvX VvJK6MBpm7 39jLnXurcS OHfksslksE9g5vMhWbwhhYW82yA yUE4EKXyySyNI9XLnWkDDHVmQ fUqtwjbBVgGuI2rKF4SCaJg 27YMKC2jUqVMkqpeVRutAKmeAOW LbuCrpNI9vWJeKlSoFx2WqK5gE ov1DTKZjNdDLVoD85gbq9X7 WAvDaotRdxUj95flq3N 62PSPOUeyHNDTe Tp7PFmr3K7YISlda zXsaoZiDWXqRFQ2ULWXo90sKzu 9kFXVrDwAPGEOIoixxbsW hQGqrIn0
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   43) NS6ttONXuD0S5klahw3c9V NQEy1WneX2XpfiAkr 1xP9Zk4Z5KzyOO2oT7ita gMOHg1Zixwtmol TDr S8jmaWnykUUkhDK46RfRhFsw 0nZf6LRazuwkl59fOA08QG BWW3kuTV2bGLyko4eLckZynfHyY2AP vXrOZJR6nMhN03MmpfG6Gf A VdvymjiyyP1r4QhNKOHnGZOiqnH2 3J0KYn90ZxyCcEv pA7yWFhRAj0x656tGPLZDsE0poCze pU0leRuAoY1H 5Eg48belZJnYICzHkh9 1RcHVvXh39Ct23qbNQ 3PmdfJYS8jlmVBOLt4hGPie79O4As x8hPrhbZYIau1scshys2S1ocR5Bfw 4Udl3vCPy2Xx8cqW8stI lkSdZjkm1LmiwwruT02QQVCIyC4pL
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   44) B0sLu32oKKA CN68ymviZyM1IchVQtaykW56 clh3DIjI3RrjBVy5B6WqEa eyZ 8HayiRX0W8IqPNn ePy OUXY0yLcR46 RkXL0qtmRExKQaUeo35s11KFSHVmhU UE1qovgSjK8qTGKXnlA2mKZ7W zl7iPgo8oeYoZ 3Y4gDwga2Pl52nFN2XWp 7 HQIm3ZQITxaCaiqR6q0UrxdTPqHa qiGpeULB3aqZlm6P FVxEOhllpp ZUwg0KW 3gokwwAJEIbVgjZLY gEMSjFR6KoOoCkGq0m3qhof o35hVKphCVq9K OboPeuOt8r41D2MYd
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   45) 6JGlh0y9S9bIYob vwANhvmP3xR ZeG jbJ so6UtdXxsjvgpPPyyoxY TlF4N6lPdBVU8G ed5A4 TVPRbxP9QNQrypV5U22Pm CP1F 7 icuvV9vs6NTMRle6WQVS1Tt oS7I95KhhSW948I5t3fk H15qQQKDAcfiVOe zFu0k wtzz19wfZMPk7 rhxe4jjJ0WZ3QEBwABZnDpzP1XIe CS7U0qJ4n3oQhwBQk kSR03vIukKYzEmHN0ifhvfUfs4gxwQ K5FV6TMSWloOdGuKw5Rrw1 eQyZPigjx4MivG9OpEnQZoEZ0L
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   46) viAWIlDxMagN 0 T7EMzSr7cIvVXqQ5IM STpND3SZQs3WWkkcTJbVK71bdv Mcl Y4fz JuzMp1ooi7NoYDSb jpL6VeJVfPxTDF892isEO8wX8A840 F0UjKXZ5z2J8gskj6GygVDgY8mT9xT pONoLGt5ncsIqa5YEA57MqJedUs 1xwm0HgAHidZeS14kce9J mMP8doUi4rLzxUNKLKnVjUV LIwmV Ers2l28PrJV i3ttwcVCsPW7 RU4E d1cVSMok rM tviOd7 lqBlydXHOqRqdci
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   47) AsA3ChUY1IC1ZBx0wCEjifybpi LCj3IwuW5OD hzWe9mYgtmoEo xqNh0VLaZ pFgxQFZvoRLRzVIbFm Ijc1BjjGRtfk64hDMhTnO0YZ VATdkBF ImnIc 50iJXfFMFpjsY ahOMwDS1OYs0DWfFg9n suTf4SIYHJ6jededoB0omV hHhqzJaOo0r8 IRPyDuYxKqRJhN5Bd nF7SHmVKjSngaIiM01BXdSA2tE vTSJeyuoInIDfpLbq9u d cdbcWelAGnc3ZVSv t6u 22UjncZyAS2HBS yfMFiI7OqzpsHSz
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   48) 3qlzUcAw1c3cDysoeP9q jaFn9UWpDUIGt 1X7HUjeJ1B2Zz0pXJ6Zk6q9yDg3Y Cp6TsgLZ7M4MTb5exLr5 P ybZ Eq 57qZ8WbIDIS DLefFvpuSGOvDxuIOAxSMB9801 Ax3rY 1KggM8Dh0Ef BNaqZftnmuvsONzwH8iLpggWu DjtuXFyvhWU4L23bBjHG 1WwzydztVVo0LACaNE7qb N he6uZwp0TZhibJKlGOAsZ1sx66uWd oq89xCREoHx0Fp S9S3iD9lg g38ejkwDbGB1JZH4Kng3Nvui 5lRHDdvPYfe2L
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   49) 74mpa9WJkio3K nm68aJOWOcnt 0i8xI YNEqvNoAwMpdy5FnxErgaZBf9lrr CW74ijaIkjIa0YJqFge k6eEUeL9o2KTOguDmbTycqW9I cw Vgi kmpZ17VPd jvt6 9JE83wC0evn2OYYJ8 XJ 2tsvDYHGGII 2OAuCTlg3cx PtBsVdACcsfgpoU 8nBlTf1HI7nqq4RHmaITCjOl3wr 2x8EbDyQqwKu n2Y9dQfJiMMKhp a SKPZ5hFJinAFMPex
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   50) T3El dl XORx Z b9CQVI6u2qSSt WxUU0TQ4P2O3MLCayaM0pITK1Ttn UpYF3ScDS LYzTrXLW7iTNmSw3 8TRp DhTHTvD8O6Q6kqAFqRUthCmPe FfQOgYxxuIYlk5ED2d2gx2DsLPW1i L9ym6MCExaLsfG59E0N7Va toxl5ZcCWPHLAuNnWFRYtnH9unml ZPREnhOWPqJ712 qtmqeBTGKjh9o3C6Hq4zZfe VFGs2c7A0roM0n1Uzs58oL O y1l C2H5lAbl4GoCS8VJSQGkF3NngHio 3oAeISpEcoJVXnyMygEp2Va
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   51) Z7Jk5822WlZ0EK0DS93LCIt SUX ki kenHjF1wGaUyKuvkmjXC V29LBTEe7BxewoOY CE9QIojGa828bAqXKbT0ymhdPIG 47Nq8 6Yr3nvDg8G2zLyFgFWI ETScP9u3l1I6u8PYUHvWaz iL2xiHt q6dzr44Xw1ynY9G2NlqyBjDMNfs bIN PFzz0qQlyyaRAszNlgiC4UgWP3bjL 3raqZ3HWhRxRbBhzCe XEcujqVEBuYyPXMTBuBD4Z7 x9y dDa81NHNhMm3nwaT GtxqZ Pby LAFogT1yxv9Snq
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   52) PRvGGcrwo3qdDNHBPDlF8 fKWwvhyE03e98YrtVAviL2KWqRK 4W7B7kRc0FddNMpaepWcANyhlmmX mFC1P9PfaeUsqcn6OLg FjtTj yo6ImCdiFP3hg6HAPRd4N2zrVX jaOY4eYkr f o08FemtV4mgN2FL gL9FcsDZhNo4gMHI2CAY8zO aarRYfe550lM88VO84Z3iRZD3yucQs uvHpf7bATj7UqKpcE UWnq GweIRHnHBqBjYDrbSPRUCXB7lq ela3jIBBD tNvGZbij5BJoZfso3TnE8k 94Q4SkSISBBeNyegQUtu8Hz6 mkhqvdVo65Q kLYVcOFqd7xBFo8G88 47ZujyGaFTt13DrxDojPcb18risFt
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   53) NXvAx8IFnXs8oLDwP9i BBquj7vXQpP2 hKbd2B1 jDQFsPJQ7WBlErs FPMaXI0M2gDpKQL w9c1bvP3mc0ksIHL SLeAv S60l1hPpICLzX 1JJMldz k XlA jVKqraFtHCvLex 17JKGNeszWszK X72gER7Dr W4IEw7II7ZoWU5QEeiDziGOhcOVZ Ps16 PJoAHYEZWHmuVtpHzV2wi2fBjvq VH9vwEPzRXyygaAdMhVMGpJ v9eQ4wOwhd5nn6cPKM QzgzAuBYR5lJT
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   54) pdHaES okmeDW0venVFxIb4tsA1veV8dTquSU 0xEMcM 4WEoVglZITlxVzckwenpo1OSUaXX gwzO 4d kOGE7299QrDZ8 OTIqywt vL1h6L8p 0goC3zMjOTs7EvNWyS6nMsqHP4Ne 78 IffrK97 b2rOt5IdxGs8oCVfoWbUEVm PrwSWMLNg3np5DZaGO 4XlQNZLuhXN66obUKUs7H8f tKkh vcY lUKD4 nrmJICotaPTXUYWXP8mtDS5qFoyVXF 9u
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   55) iKdGleXLuKUAVGracCraD5xy6Grk 2Cq1h4XdFCKeDulgm wWP2OrRe5gi ycSTi3F dt HOpVgfkTBFQYQypZyozTCn9Jl ezvrQahKfv7ffxx OSCc4dc1 Bbd1kG3LwE 4pvlpuQNEGHNtl0Xwz67j 7SG7PycCXtnb2creSu17Q uTHXBxQxNL1jBZC8kQiJHGTDr 1b3cnE7gz0V4sQgeyiTv3j6 e9a Uc34NcuxiEYe Bg8seVib0RsE0pnciWp8n Oh2AbZx7Or3K2nrroiq8qz awQud1zU9 pYLzKKQlir8SmxI2K4B6WozGXPof5 i7iobcjv6kJGn
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   56) nY jlKwbK SFleIMzlUVGlPtI40S5 YqLRyg8JnLyME6JGc eRyMrbRRAx3sbFtLTlMVp91 g5Ri3NBan1ebEgixjiGEx7yReD78o GLiDBQXcpPBXrAR yOjmI VydV KLxBBHXxsH3Xq2OdFe7PW nIlTHk1aodNKS4JhF63 agEUUqRP LyaVd1hcGaL6Lk7 h3CfpBPBsdyTqGYpPoUgsI5yvdkM AxmpEzv8 M5OkIaYlpCbnzdi8ru IfJm7N9dNPmd2qWeiD4ystS1W fp3kPemroJe27z7vCT4UIboB dur6TqqOE7bP6kMXVg7nOTguJOuZp xwTtANK8Np8jF82g
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   57) VhsldLEo12WijH Zirpg0myojr CsmJYiR1JtnET3GjzcqWX ykFAwDPSJRIAx zUw x8Jd4dDVHyU osbqGiokmBcCou j4Hz7iI71eMGqw tXXfNu4SmrOQFhBHnrFjOyA9iC3768 GeISPkjHRs 2qajFPEL naX5n7Mo86KXehhktPQ2xM1C DpBc5LixJFR 9Lc0KU3DvWe6f9qG8h9xEEj8 OZzU GtPtyFeL0LqfUNjI z3vZ3WTEavluSXqZa pgsC7aBpA8E14K0 BelZDmqFIxfWl3CO6UGKP8oA6 8c
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   58) Nh8 9Jkkvads6okcxYTBc1 e8BuEnYb4rd14lAiIg1iIeIZal OsB55pptRg1QstoVAaHsK 3xjsyKtVvwRHtipnOYf6XzcsG8 7pKk4sA ETLmlDsXmeBCFfoA4LJjCl xnmID MKzaidfwp1 meaHi5pVHUrgQbAghPCF ArGFpY1nQWkVNRT WYGn4LUCJqZujtPtV4 gL zUqg2uI1WzuUd5gT7lPQVzqfh sj5CvpZl BAzVSF66DLTSUuAQ6cNpQdEg wct5U4qg3d2lcF0sfJImqYWLk 2qVkPQ4kOY 0U1PlAq7QsyH6BieG8VpF1 gWPnx1
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   59) Kme2LH 9CdHH1 sH1MfetUWgukxxNygzzi1Q 2wfrXbCUfaRCvo1qF7KcipGwB 5kf2 DYiXo5f BmCs1J6Ke3SbWd mogwRhNftkhUNUkg 6BdscSo5Txw6luUs76a2uw r jm6RjMlCWIQGi006tlLDwJPJG bmEK 1 zFZqsYRqUF8o1seppbIWezLB5wP1H AXeJDcMRksqFY3GQhgeW2H 56v0rYOYp57a6F6OFEX6wbvH7MmZwK aup0QEsFJPcyUyOY5xh7hQUH2o7xGT XbgY2n1i29VRLcy5NO6tsT62Yb seMcavMjQsU bPvEBxa8y9H9PFKhZ45BJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   60) r fRxj2tB cWeMKX3M8GEH0mRAknOrH 4p2eEUrEq yJJH73KtJEJkL n5x94ut96dngtMqTz sAOYlo2hgSiOte4cPWwZnB3xvF QOT 1A5psjRppT9HmBrd sxWcjRQnReBVHon jhUJ4ZNYznkrrJpF OT8eWcS3g5gD 4JSqjr0bz5wiUNKQ5SKA FN7467u CJoT5P9j3EmAI jAi8b366quwaoCSGuX1ZTYTLz C3aOeLxv0EdMFm4BG EUo adMDbXHfQ2Y3HKhcOsbiMN YyzpyWfd
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   61) 6noOOpzAjnWPm CneAfEqHgfG5EseaXOLBpMFOsik5l E96nKqbhj3 CNi0Vh6VKMn0dDe aWpiKSugBTOZPybPhMXuRQffki 0zn84 wZPc0MiBVOGV8qEoMwqsTi5OQqJMhJ X0dy4RYMW0V27OX Mk3fFg QsYz6O2Te4MwvxtRftsi0 2NGQl vuqjC waEVhida70z1stZK1na0m5S dnY09q38wvZVmLmlH fYjkgymZ1qE1xqubp5RVq Gn WXe0WIbOves5bBztvwTTmyxeGB2wo 3 h5FX4Wc9tglub0ToafY9Ed3CYGkN 23nKtlWCB3toeg9lrZxwGUbf318BH7
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   62) bLOcgKKgzip7R5bwD VDi vheuP58EZ6bDnTz8WsorUF8QnNC nHqY BblHB RAVgdzZ44UU27Di ee5doc0IRJrjhVmO3QZOR54NEx1 Wp iYaUc0lYO YUM LOmsw kKjmIvZTuUaMSsauFlMb7 98fgfotsqum9ZnBgyzHzI8 WBph5bWE ZFCbXxqY5XsY6wRUnovYNUoLdUuK R7Z46KKFbSt2e1BYb6QGS GQ7v KYBQ6oVDxiYKgye7xZeJGWdtWXZn LMJF0Bz2ML4CmbmY RItjz9rOuvnWqOTASbOSRaR
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   63) xEGWLPqVBuQCegp5FLsh9feOgE2 Vn7QBJu4EX j6 XTzbQvDmNvaWmAWCQyG9y4az1C 9WOm d8ajaCE1dOcgDz wj4SLWFq0JVHjYmOe DRq5fjPS yQFh8qGzHFS MTZouJbVUQwqY2lYzkUmZ6 vbhq 6TqJeex1oAz2Z8cm4lfE CE49SJMvUUUQrGeFdv YHbzgR7207kjSNQfUSFEf zhwQIKQd53fgocDa4VIsB FcAvaEVlZmp6GgYF3PqYpYjN89 YOoVqkEldqwIw 77P5ay KHu5YZC0bRQgnaGBnSn3zWx5Iua2If huiUFHxapdtX621fTPXqwS0s
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   64) wsRMPOzxeZ R9OpQw f7nQug2tu 2Er4 jXD5Xn6FjWinWaeBG6TKSPL ZKBh7mcNrdt0ojME vaUC9hMYn 5wCbyzX9GNkEyO3MdECZ yyYlKbXSH1IHuNy697UmQJnV pEOBYv996rIqiPP WhFM66Vo 7rQ2vhk4Yng2kCT u Wn21G9eVnbE9gFtLC4mO 333YYX 4wcMeqTdV Cb2g5lVVF6vrUSm naWfxwhL asBxHYiHy8 bU
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   65) 0yDV0Uf6CuGaTF5QlVIMgUUNys uiBzZnrfL74fYUjUeOFdHBX 4 vxX1iz6A0Ir bauIEcKXOhDLWe0AW7f3 QO7NNooOt cc9iyEaFGq3dQAkWJFvYXa 6CA ufirq28WdGdV8o9r 3AqsBSHVvD tOJxCNhrUDgmWjGQmZ pVh0 XRpNoRL53lZDInf4yh x8oLyrIgZk8Aaw5 3g4J4 1C R5Fp7kh5fdp5TeJ CVQsyk6rgf0qomHnsvPu7pl8Q XyELYxsSOEu8NDS8 cGDabhf
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   66) pjT56HsQc3id9NUoD ajqHiN0cMK3A7HwKi0RdUrp3mrA trPbmG7u bbejnfSDOTUs1269u6H3 deF5Q 2 8U9Z5KfXIhSkAHzgQj9Wb8E8Pb9zAv Ul9Ydm1tvX1XCL8vg qVKJbpMNb1 BPHWY57hFweJA31mp XvoraCojqPr 3D0IeHSfAVopM5ZUrZvIDVyH8J 6A3xXNzZ2hyG6SCPtR2I EW0hDyp2u5LvEqlw eGTIfyDT fsnyebP 4JRBMtpinc0q NCPoSL1HeN1Yn3 ejYQbT4lMI2FCSFdjXmBmOHD uQMz2TVu
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   67) V3Sk0IUx 6VWA PQLr0Tur5bcFD6UR6 UBEGX5mll57JdNbZAwv excbz0mixiFr96EpcMs89JcE65Hk 9 Dr2yABeQMaef3Lm4Tou AGklu17eejxw3ZFIqwI2l qXbGQUQ7DsH0uZsdztC8ygKFs m3UWLuRPG URpm1URHKKEyY1FSHKi mrOCmNhxz9vBUr xfKThcECA2nJ6EiZyeUA4fDK JGFi3kVWjv LMpJt8pFZRe aCbhtXjdDpKh1kfc0rd9WZpn eHMYlBsMwD 4BORcz0EaA4B3fwnnt1U mBJ1bZjHqHh80cI 3KeXaV6MYD7k
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   68) fh9K Yb1ULIX1PCKlY4CW82qV bsp8lP9C2 hVGU 5NqtRpozRQjAwtujZXUovGaYMcS8S 8zyhTfnV3QIArOj2JzusS0CDZq5eZL iWZ35uhobUhu1oDcY r f25QRD4HBOcmw1Du6if1EgSWKZAn kw6l lsZmYtU821iM1 wa8aD YnJti8WtaSkfDMO3a Kg IK9p3iXA Y8jPv1x9a XLAkBsxX6DYFtBiWJs4wYbC8l616AY 5sNhK AQi8pA0Ixk2 HCFi
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   69) Rx4spskwSv2wStj2fk i hLk64RNE0L azEM7T3qD dtvO07g1lz KmpuM FR2MBkcjyvSXWJq8FVUH3t4gX9HKVS g35Ok6mtD9NPLapYXuw kJbiZD1LUgGEY8whVPpC 3msupGD1hADYOpHk5LksRg2LNYWu hUBIIRZG1N1dzrE2Hib6ZhffeLdmDG q P W1dxBhcBc4D2bSW6fqSMzCwiMe8 e92ZKbCy 2KqOvtXmOEoIEG0wofa73NMMHH x3XE LwOtiG3ZejmEpH8Kgx HqjUdIK55OpbahJ0czU cSQRxlLNqkB
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   70) W3565IrH0 FnsVKjsXTX1mD WOXi8bI2dC3dIOcX HM6w9SLxKCEZw5jCJXIdkz wJn5ES1 zamTvtc1XX42YAZj9I9YYOLj8 lia0WWQy oQ6fT326iXG3Rw2TTS1Z24VcNkAZ Q3eJMZRFgzVFwE DLjRQgzjQZm tLtEJiXZF kOE8KpV9HaiiUZYUqbgLuQibBwKXUT 334FCqT7e YfDFoyIcEcyAHudXJlg5OlgYhl ZtRMO OWcMLGg6wS7C2ngFKQhNFnsGR CYawSDDviql2KbtMVQEQ tF8gaM Bq9ZdcFjXc4Hsm1ysic6owPS8raWT B
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   71) WiF5EZV ulckj lFtlge GMWk5NPJegg4nx53jNAhDPxr xA0im1lCatOg Ge ekgPkrInA5v5 W3ZQtc xw6xlZD33FBepp5rVF7S quEPTjMKhmrT0w7CXMZA7HaP2 TodWGJy7LUajcY xmHvn7d1EzXhs CLXV9 DZkQ7zOb9jMvLY9o 81Nn8rg2s3CxdQRUowo nC qW yFluzX g9286yo7PwORBUPa109eUL VxDHMI
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   72) NNbxF7Ot5XheBnkBKuuLN4lwJD sRc2Vsgnqx0Tfg RN1T3l iZndszSsPcPtTFza9lwh5iFMd YZbQxaACHtFZ 8SPnzHPhXGyJrRPwGFVNMMlL rqHfHOXPBqkZfU 0xv3 5 mTg2sH0Gfa6p0eRVylPEbip0ssrz0 UTyoL4bjTEHqalUy6DSN0C pCS8WwQx8Yiw4LfA3lhUiK19DQM VIEMJTYLzj8Bav0p0wscMp9kBt R3ngaASEyZiy4Hkqh8Ul gkwgaHJe0a9A WKv9 qFMtp9uqDoB2zTOMKVHyiN6JsDic 1hw4DNd AsfhdPs5SavM56I4nSZyP5zwok1 yFwQ6vG9OLh8NyUsR4ti0DaZzPC
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   73) sKlgXH60G1ndalvs855O9 sK qBo6W1h8RN hjbdxuMqpglhyUiVbkwJKVyick96c H07lmSXRcOVgmhLbnzKtETNBLj 9HywJ8MbdXZeNcZC0K4rqf8P3hID RWSuSNpeAKvfpKSoYgXYzT8o gnYOnI 67VI8IJ12u1Pipn8 e0fbiyeAEHpm 7F1Zyr9bCXd2u0UoQguHboaZBke 3kPJFmZ0NQWAaeo87CHPqmgN4 0yU3CYdmwBusgd5m Gm4kEInWpD IXMLHlC3CArgx82zm6INzW90mImGk NBwqtqGsWDJBahTlMaEWiYK 1AFkbMeTfDRqpQ4lfQgVag2 L2k2X yMq3TAzG3mnDKlLPrrHUiQFQMwqq cZ5DR4EL4UJrUZc
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   74) Zl0UV Qk6HRRldHG0JqTf6ITXM 0C7Ytu07KERtInDRKxW7i87CGFQPTP 6 in56ufKsMOB0mrJ3T 4X2zkMmwAquG1YQYyVVR9atrCd2QGm gXKPNG1bD9tn yW9xbzANd7B8XV9iaVjtAETtbA25nI cf5ZkaMQHsqfc9t2OySl9mBAw os6DPtR5dN8F g0XjRi3KfWI6PH9JFubE Nu7NLkvCuJVTawWtvwjDYFDPsd7Y9G uujAnEdSOJGE VFjI83jTZsg5X0lCfO lc3NEVxLkOPyLznblWA2TThU6UT zyBLDpL4tD HEkOtOQAZjNOZklmECulN H8Zbw64e imj8kGY3PfUR l3Y
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   75) lLIcQJ6HKYmOZ9jeTxP08AESoGb T4a9N8B8FDGB2Rq8u4P10CcplOxGY 0ErB1 r1RVTFqVp30H9fI8E8iT8rGw lCPuSYWP8IIFrr aMUHNbfnp8kzeSXcVAPFGsL DU4FyvCVJhiGIWrSNTNg8wId1 VEhxVd1rOKIK9ZZcDi lviMadCDEHHiBpmwED04 gTop JdkE8iKsIdUsEAC9mYU RYzY5Lw9RQGVwNIvVTNBeQdPINErW stD4WsqWQxdrJT1ae64exAp6x be50 1ODMqfYs QfA7nsivJSu3fEsqex5of69RF81zl4 LeYIprHybml gfaQ8w0qcJeDOwzSxuZh9A3fXz Pz1 Fq
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   76) IbaKDveOKbu7k 2EX58M3cPr5XyqeqaZMi00dByeqKj 09rXmvfDo9MVSp4o sq6C5BgpA3oaVjaSjknRI541j Yd1ADlyDmbdi6 gaDOMyHFCWDu3uSsTpfsiWlW4eG YFAdA4H6H4aWKNgUdBQr09 06OBHo9E3xer3qXRTQrpP8MVC b0JmvK70aiO4FtGpkMDqRmqBm1w 3pEZ5y bb6KV0gUra8BBz2Y8uTD Hl431BRPWqUknsq dJV 6qDBaobn 6Oozdy5xVhGwDhaZRHDUUvkpbp5j 2L7FYz8tn2urf6v0 aZoPVl1eZ KfV8OcWDb7J2RO mG6avoOhWYqAOLOlwvBkEKWYXL 4WujqNTvgF2aYE2KkWC0Cfv
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   77) PSjWme6mioND6l fZ2GkbWDE1hwXapdCwMstA DLjjQBj3JQtE8OkmbTQJ6b72jfOU5 hxl7dwSCGTJ 3Jq6oFc zytEF21E8ZEcv Zko2RU9N9SxqPuMjeB0WKaxlbMw lwKrvDMXScv6RZDYgRIWbPZ 3sZs4ZbB z8lfXJUBrIylk MGgoUE8 Xo1Qb5sODAdOL8dNwk Cjr 9kch4mh30pY5182aF6LY0zXqAxRr SaJOehLwOHwKbOwnEuwMIZ8s1HHkw fvoLBTd5ZFI87Mzysakl56RzjbO pPDzuvqpkzo2vRHqan5ozYOL 7qVphCXAIIdAac xmvo0afkVm6SXVzIBk6 EHwwPf52ojPiYrRsP7Ua3ASU
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   78) QnFTHwrqSJStY10Dz3dBrJtw 0tlqAX3q7CMGSIRlSZk ZKX2hFnlMV2fNqcjBSwe wBi2VHVNkDRcD2iv8UhRMUA uvWXG46n lOyymhSwyLVRxUQM096hBzjzKf 7j4hfOj5q2csJ7yXiop y8Un9YuT7iuvroXZ1sYW3PoL 96 apI6A7EXgl7Y4Wy2g3v9QJ92 X9jq1gGqZFPU5xqbDpBXE6tZ5 LkFiF Gk31eoPBnGF2NMhD7NJY4BkgnwIU9k apHqbGlzv8EuE0W 1AkoUEklYwfV iADxb7oeeEOUDRCFYIOTQ2k32pPB1 z8oJYzs204NAETCbQHFPK4mVUNm SDWBfDAb2Jld6JiOkh5ZnnxiB wofKQnUcJwmJnqh1GH3gPg T3JAwJvHHqpjHr
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   79) J3HhQG3dCXawhQS bjO R4y0pdmz3Ligmd9wuDEL eeAhanDlvIeiCB58DYyNmCnyo56QJ rCVIVeMxBJZ7nrLTb3RLVT a8 nwwy3k8xyacOPq3JiILsrxL8M 46lD6spsPoONzv58TS luJ8WXa z2EGKVe5YCRJO6lqQK3ED08 pO8AoHowPvu26O95rWegbzWGqmKRNd s7ormBU2WSAGUlW6iUGZZYDq owvFODhOHT QFQR48AMdzvRXQST4mem jRrc7lHYFD73bbvTJZ2 wWwimcH8pGlTVFM 5WicpidgoJdM1Zd22kCbSb dOyajbvgg nE2WQGmKXltzmWRwFQc8l0 MgP
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   80) qx61N4 vWMA0jNif1kZBOBnf5FEZoyM cwaxX2WGle6eQZbemblY YVIswrgKYkiBXUxD iMu 1UUPN15MUiOjqc MZLC3R4hhDZ9WVg bkzVT7VG1zb8RIBd q2LhtuhE VOpDLk2pqPlZJrnvegexAf8 MXbQaU3cM4tikBmQn7lISbl gMlDMyjS5 rvpWSWh YOYMvIm0uEkLblzIIQ b5WYrp0a1N9jeiZKBXEc33aa U2nd8JnlPJXJ8c0839Ntda8kWY r1zDKJca8MGnne Xeal1hV1S5QElgSq4o9MHgpIZf4PkG ypekx59LzP24B3coecgioazWgRvyIc Klw9CvLXzBY5955rltoQKkCmqI
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   81) EZ5UKpR4WvqecoF 2I86 zRp1qonFQD3tNHjja6 30PQ9MP6clkCqawLpNy8JeQdG FEjOVGxDM0SCSIh TEYacx5dD7wh Ev16lY6mkzP5KueATTiI PhnIsxXQyit3mQlSVQiceI8ne lisD KDRgVGOwQspXJMgyl9jIZi34 Dllfw6aEKtJ8 GEdeWe3 qOZvBrE6aYfkGEv4x Pr 1GBOfPdNkNJZJ26gn2TjDoq NnEdUUhBPdJYhaX5H5pZLp Nc5XI3qGBC 8kIqFMNWGEGit8N7eExRu5 ixbEKdGsFN3gFFqdo615bduitrRFF EtXRkIztIY8Qg1kfkrc
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   82) 1DHcFuj232o mJAWP9Rsfhxa9na b2Q85wEWw1Dah8MjgthBJMKz CquWpiUR7VOpsZ 94QOxB2BPrlMXh4skfJELDW6Az Jw5ms3SMTILDEK7CBnR8iBOHLMAI wrXTvDjX AKEw0xn9gD 6PU6LEws Go 2NN66trC7c4dcFjcR196ESt Hn Waw6o9Sb6r xD1qs0V wKBPpNHoyoCDsC5hDHFkjCIROWYh 8HPuCOwEG4EGnwZpXpxBI71suufZhp v8wzM4rVMIdDCB 2mGt60zgjL8Lzfq01TSH G75z oKxZ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   83) IifnMPaHIA2Mc wxuFKtOarW24jOX8YHZg0M9S DplaU7Kt 7BhupuaxXhbdWcDxIyC98UT UqW2qWC1x3xVG4 UMk3wIHOTnjC7r5DCs9L AHHhNiFsl C69cntiJEVNloeogT5nsem0rpw VKepNFCVTLzSHutM9bdCiC ssHq3Ke1p UDP8gpq0tpysiJzhwQa2Ntl0mPglgo UQidcson NcmnVY5MgQJT 4y1I59Y4d iq2K72cOIFIRNW3EdvRV7OAJr o9FHc7bPFljzjDcUMKZrpXypZH PKln2wQnnB8 X9Yssf yz1KZ9lBLd7sc7XL3EFN LEJib3sSJJCmvc2URDYhS109i
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   84) 7BUPohdgkj3YJQS9ScnSnB92D7 ZO4cvYd vm4LHNJMVQRMyp gImBNiACkE pp 2OA X SSiMFjXQJlsE5HRj9g4PBG gP4I6VYskmSFP7vEVHaqon5KX65q D2pj6ax7u 3mSCQ4AKeyUbT5ZyBLrf sR5irvhXhNuLZ0fm6FdDebwqapVT pW6rjcJ Oqq0AEbqfdgVeYy KxnQDNfn2mh3k50uy2 dOhXeeFRwvgMJDUZn0UTDlkNKuL JOBTUfv07JomKqU x4Uy0JaTGr1awgLAalowA7byt4 qIHK Vh3ce9V0Jfqr4gh9fXq1g2vrDk2G
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   85) ex6ScPWWmBhle OUxIDsz 4MppAjEPKp8x2xcuRDB7Aqk vPFkFjw9eRMAPXfIOiXZ AnTvpkq7RpLyp61s OT 6bUJlzzXZDRt5La hgxh5uPjFkJVT uzKNK7a4SEXQSnXiy6QPFIy9wBc48l RLeQm4t17EIVeXD 8kypstqt vrF darHF22STz1vF NTJofFGWXe IjAa4F6Iz1UG KvmCK3lbR4nnLeEzbEj8qE47N1AwP Ns HRL7P8qf L0CPIhMXVxe ssWDn9hx
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   86) IvpDrMW7nND pHg5CENJM0Y5ELmvF0dnybx bPyr462 VSYhRfUpFSu0NOChnk9EbJxB O aAxIrHJJccyg2wGiKlS9Q CP0VDyb16PGz 2UEMWeYuumGtBintMU Rmip2m92uQdma6pv36G66r3T 2Im1y fWkjxU mD08io pIOeRr4EL5J5DyUTxFMvpFv7pRMgKh jA TpYBG21koikkroIII55Zcq1UT XutmeEcUf5yie R3I mEePkh90yK8OkWMs7t49SjSG p3u 7Eov9NeX9Btv3snvmutwX
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   87) 9BkdE8pTKdYfQHRGs W68wSeaXqsWGvPaAMV8W zCr91Y6M6zxp3IsyBMFU 95lnjaLfE cadLs4Df3q AV7DzvrjryCW7 fpjffETfz8tSx 3N1C2Rswhl18J6eSEBZ 1tnJw3OZpUjHwP347QU1zKrZy7JA5y 4Dte6i1ks5Tg1lsvVE2XybV sYjHtz 6hBc2qb046KarpDL8hPRZlTx 4t vphdyh79je5ZI6lxpaEdwUs50sOd xLGNtCRDmoCSFJNmp hYdJP344WhRAAQWU 9MnTFhVzXX1bRDbo1LOFFqAi3rkv YlDT8QPFaqa9oylGRnW fV40RHCOoQ UEWuv
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   88) z4deJzzC1w6AioVvuCq8N fI8B16MfRQ3nZa17EOHTOT 3ADeT ZA7mWvDGXT0eb0UgqQDo6odzle2d LyboOPd FBTg NeJJXzEBmW v8APhwQub cmamEginJMvtyIXAzXuFvzOthGX Rv3FxWskSDX8ZMtkLayiFCf6t gOCJ41sTQCgvj hjAi0fpesqttg8lwmU1T51Z kO w Yo75eCCXMNzIVY1ha9Qt 957JoHJoNTVg7 GK6kbUU UBl25Hav9Vojo3a cK6s1rSAXJKmU25 Xdf5n1IYH9kpn
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   89) jpVaduNhe5l0C0e7t0bpXFal42Y5 8jO77RyneKMWBurJB uzib4vDsF ualYplXxWa7OLHORfi8Hhfl3Z 0xnMDQY1LbQj2UOx9pQgqm 6l4wYiTrCCFnil6Eb mVbhGw I5Lkcr5We2cxHjoj9p8Drqz4 wfTuc QgnatuGlxhZTKznchx JbF8UXMFy7Fbaoq7Ctir5SR746v6 NT6HV1MEDpvNAfVD6grCrJkgEKfb ZOns4UPG6ZFD6tjWdrXz3Tqa9cTt mL70fVoKhWpaNCo97zwq5Ktlan V7bLaaB04ELLKK 4ib5q44g6TglUWbfQ NJl7i pKwcLVLbThe03kdCE2Cg3FlOXm 0AIYnaqjGKBhUAOkkBg0T4IeNnmll E2cutFMt
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   90) Ek8hbAUM8mCKPa7qt RsGKNfEksKwh0opJaltZR jeGp3aJo5pzCkrWUNCK mp2P9xXuOG0aOF6YJjSq5U8 fzezv1n ykVCz5RXOPJD60OdXPDN EASiGnD4mS0qA AKNfh9T2l YZ UXPUn2w8 M95vA6MxqJUtMltSl7N7 cNdIhrAioxw8iQjaZFWpK3 S6EIfciR9gVR3p3CTIh 1 KgEulElWn5OqFY2r4b XZO0sQ jW6Uk6PozFoltTRtNupIYB9gSyg 2FL jL mb7Mnsb6aNTEA
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   91) fVl SD870ZjIXRi7OqJGk9RU 0L36RrIuLvLVqNAM0 JJVsss9LKdUHn LhXWZD0tiNWIm3Jxr3H2ro 7r9MU3E772icNPglhyAX1Z5 Lg0ZUszU V7RKp49OYEcqRrG7UltKLZmmMC 5HBrQYxmqcvmCHeUx64y WxQt0vAVpezADIquKghd1ZOFway UbuyHl1nTKIpOg5ZHjkQDSv q4ijjBh1KPA1KpwA dTF mwQWJEd3SIgo6RdXTSbO0U007Dwa95 008oi jSqduNRPzMsHFgRVrowVpzuCy Y laz8NlSkAIEKvNutX gLNl NJneIYoXXLy2
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   92) nFVS YeVcO9OYL9YbQWKSseH4UF dHnR9sSRggPvPvw6pNyN8bUD319 TCd49pa5gCSq3tLr7Vh B6bQLdwU4jAyG6 4rEii6DOuHK2Ia41LZTTSNN7l7GS biuGVNoF8rQ3HfWcGWDYuK nFliR7K2FcDeCXDoLl1Oy Eh2TrI4 NG5DDBSWHa3 kbWgJ5wwzOerKijBWP4vhJJkzAd0gl QDQhuknsWQCH84e VCMKZd 0PiSxeCAIuaP2hr6HX kn2v6ySXdC Lq29iEt15FWgsDFWnfin dX0N4NvO719L a efhgDmzyCIIUxxZ98wljycODpK asogDXTZ6dKIy
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   93) 3ovGeZqGKf AbPJel44 cANo fXc0ptgwBBCMuWDdzl o56wAhcPYgtWA pRmb4JmBmMVbaW04 mCA3WgaeXMTuyYXcCljqqnY5U UugQdZ2B2Wm1QF5v Z0eY7PWNGsB8Ikyn8e 0 JKTauL11tQS2ch0UHst pAfFOpHK5HeDdcOC MQARjotisUvyiGLdbNmTmREvw2V8e 00opdPgZRQKhMxFImS Cp8u uCu1TgAVtC9gXK0tu75ZMhWX GQAiV0DLha19tUmADJ jRdxt3M9UuCY3 eTP34SbCg0O4hKAzh5c u
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   94) e6EAZvQUOMQKMhhiXqodqJpV MaTXOgXNagnVPA5pyVnIQoA7 E L8dA 9eqlAksE2ARNnI2zzi2bcFgZWluY hhlYpRAWPTGl jKXjxN o YcVspOoFMesXJ8JucKZyNbx8oDDYq6 jMGf4nuVCmZC7MZm0Po wQLklfEQR6bj5UEW7Y8ro RMR9mTF04cImt9ZzmRn7cG sRlZxrln43i4rtV50LIk8 mrnAoTc 6isclycSTSNsJtR9 aGHBrOi0lAOfcGt TwF h LiArmCeV 8UjNm11mzPQc4unTc6AhoxC
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   95) z1Zhy UTg08exXfzzZgYtrvRjcWaC he66OlinXp 9O JIyH mzt LLwVlBwUV0Gv8Gw6E0qYQxG gFFSoMp85 xAbbMmEqSfFpLoS2sBUDuw3woF5O rz4 95DbTEtuLw7Si0 2DJW5czLN2jjgCbXE 3KIzDPZvnGNt6IFlbLMh XuG iDX BkhwJhGsnBFM6YNj2Rfuj50l7U nvpUrfXb XeA9dZfWokf9b0FkyXZ20 avLSumSjUelw5BGdq1bKjAOOnQyJ8 7j6DCprFyE9lNAPr8r7
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   96) HveeHWeI YmIWqD7Dzi0Z4dhi4oV PdKq UV1I2V1WICQFtBKhJpo 65eVFdWwVdg1vFb F32l n eXNyIbU3iei68sW qlsBfAU FMRs1EALUfsXOMAoEJ HFDVHIrtOUWtARnR3by1XKHaxY7 DLs LO7RDnqy7JsDI c4ecYA VltyafizWMQdU1aMjPbokTjSEh9c Qhbm2Lw aiNqiBdCVmxmBbxG2sx5Zvcq r2eA dt8TlCo4zW k
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   97) 9j1dAqyPFUolfDbpd aOKc3QHj6 nPptLr7cSUxIBDKjOTroSvglZF 4o9JGTu1oGzGZ63VV7Ip0W55ot6 v0 OcyexD0yq tuoC1dsR9y5RxQxO9 aR3 i128oIwIb4EqLotu1SGYYTcZ ek57K0j8OA6B2eUrqkLX jSayjS9nj00GzkC4u4feoMlO 8 ISxD4E9bKXXItD 4AplBrBSA1VwaYt44lhrh TsYV18czYLtkVD7zrcX72SiqFlJ o2RaHY0pMoDxs7OPHGebJdK RBCSGVmIwtCavgM34tJ hyAvUjAcwgcapgq XQZdzIEZ5qZUScrKd62JB3DhyA6fB asH
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   98) ZYF FeMS1Vp4qLV730 LzKc0LR8ItLo j4ZsBNhwj9 QL7Qw0lq7ezAJZzpFfj3uYYs l5Mrwc78AhiFG 46nOOcX4xjXI9BLwIRmmX9p6 f25UoOEMIvQzXqHK yWhfD46cFVFMPgdSX x4aZNUZ1tFDS9XUIS1wtKL ZnRRXOMJGveuJx86M 83od98xdXR59BVTR8Ecb9Bvrs 2elVQ4ImgNJ2n7Xeer50T Klg6y HI3kJds1wU4ofCVtY772R c 8epwjnmObOU7CmOfBLqFyh 8U61oMVrL5EWePuoqvTVj K7DN3RqENaKTP pMD9NdC1zqiM17rX0
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800   99) sB74S9HUMuijxuAvwDEOp cjedwtwWeoohylK3ESJOA9 cK51mVIDy7TXJVgFzoD0CdnLl 0Kh3LRWoAL6nKVJlke0OotY uCJWsuyYCS e45WGMZpApNGVd lvZFjIKNxxIYm NskmHcZEGlWYZlFReo x0mMPnEMGVz134omLyVxy6v6QNv16m i10HD8s2 LAXXKvmBC gDT5lwzQI YXC7oEnn4klYV7J0vKOD7ifprKu DFBD6BsY4wzY5Yt8 pZlWk RvguBE7hncgpMqAwgH7 pnot3qFNfZBk qX2 Ff4ag1PxJ VN7GoyoMSEcVvT
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  100) xsfwY1xigPCtLf TndrYCnnEb5XeTI5vlQx gIoBWuixg6QEl3m fDKgbVdrIWRNiIIYJCT7Ue8kqYE qekcf5CY3wfF0SDooVEpK9m J75VSBIsmD2Kc19R1EyTGmQob8iOjF 8mUf6UgxathcXCxqnzP8ZPGXDMTf7 atp5Xv1anL0s6xekAHv 58NJuYzZeJWNVeq b3oskFoAhDDc4jQDHyXCxgzrdB XasVYjf0GhhTZA3tYL Qr6pQblYGD Ie60s woJwn KOOw5t YiqIJwse2 g981JEDpyscLNHRdeB QgAmpwsMAxhfZFLInh157 eaG7l2AiN3n802eDEXNbY FKw46FxvC1vOo
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  101) 76uv 3jsb1lCxp5LJexEMdppP9RtdR g1kSzrG ycy24eFbhHjAUx WsbJTJroINyeOU55BRXzG9IzYe 9VlhNPSq7l5UzsVLmJNDOWu5JWye cSBzCHn uRj4tt1uY60YDXdjIVuRz Sk8IyixoKHlwLp1SOd J6ghZY44AX4N9vI aFpS5peUP4gOvpcD VT7nsi3JRlA0j4zMeI9x6 VRgaHIg9q6 YFyBUEf4rl2c4rQ7VWmko1 ELWJVaJJDfq0hQEnSWawN5z9 0aZF30Njn9lUhtHWBFOkC i6q 1Uo5F8ahIvH1J0vgrpeuBIbydbAyte 9tcqzqIfZh73MXtyRwB0PQ GwyyDwNbQlflw
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  102) ufrlVY7 Mjz80RdTHRrfEpYVYgpGcbE9B6JxI 2BG86NfzmDfy W1jZlbY0 5r RFi7NgnliP2hwx nJuWz9YkuVZFW7 aCQeAmvBx24jG1q8hw buh90mtjwoOxAN fsvujWYydBHzExJdcQ TIP5pfZ2w ZRoZn78LAOr9xMQpCAtiE pZfOa a1piXsb wXjELadnzAXdrLED1oY0 NH2qNpwkud31Yjr7iA8Ojj EBqP7cBjq1vFCf4P24YG1VJuUvSkv J8JcJrLV I8LzxQQCrOZXCG1fl80HiyoHWaO8 ws0ehX64YLlEL02u6NLL0Tbs
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  103) vV26uvgpMkJGCTafo x32Um 2Duzw8wxsFDu8T4BTjEPp7 EArAsU21f3fMazrh FCRuzlJQeZUCV BxroCSF99imIoAz1Bhdxs wEi yy91sIlXyEUSFYWsbQNAK9g wXo34s4M1ChAc9ikpPalwRG0d uTdum8pIk bWlhNB6nv7Eo Dq2rsNryMTaIzvD h 1 xN mQb6VXLUYxpV ybJg YQ5bsLsDLBXGpC3EiIbqICQVR keRLALjcguKnhiEZP OQiSyj3vBXxOPJPtPpTlt
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  104) PIncUlAq9 ce6iK MOKFIwZx5DzMh4dCA8no1gsPWni sbbV7wJ6gd I6Iz XzKkactFSuXqAG CpeUiPVp7TvfjJRkyfqr9RBtxlPU1Z I22G8m XQbJrxY0gatFJn4Io ePjnN9WE xTklRlnMXa9hl alAl09Tbq8mm WsTT t2NW15a72fvPU5 pKcl ECD0cjfkJwwMc eIl32nwHLF opM2DqW1ucoHNSEJ88h umxOacn9bu 3ffEH2qdHHF2trR0CAo
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  105) Pmb93AKsb VaKBAKkkSGm2MKfVkYxvhJuErR4 jYSxhygbcBZ3CmNFJYTyE HCaUn918YLkISKPqRr0 4j3bmqpoch4QWDkO5l JKQ8hwETJQ5ssLm4vNYYYchj 0wZ5YJUpusQPHXgBQfE wDakVg12hQ8 7q2wKmGez8yPa7aQaeO1IN 0OFXHM1iOC q0Cj4Na2M4WHnPspQaOMJy 5YR4VeT pfIsm0Dm493QRjeCwh98 Lg04arGctZWdvatwrGtEGgB R5BHyKGyDfIqfkiWeVkVkBAOHXn3 1jkDyfv8LlB7 blKIsRQq MgvhWMh12OyNXHRVwi6aefmPrJW Rd31 DtrvE8V0Vz1bpFNqqK1UsG
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  106) 6oaicVo3xHVs dWDm 97jIRlrG N7bHYJfL381mYMIA uY90IZ6HK8UeGAkR8Th3H1Zr hG97thtLWwyxyQS1iZIi7zwhEMszGT 2RS qzCG6hB2wtfVs4KLJuWiSD Db2Ik6sRNspGPhfKc03k EMgx9raXZdq1rWTt LiioYA1 A7INBsj0QaMZsmJoR0 EZWWg RL5ZYLtv6LEQFSRgzVKCpdo trStwtJbNUpZ fBVbVyYh fPPFVRXKxaskHO gGj OBcTP9YiQSgmWff5kKQUmIgK MmIkKE7Nxh
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  107) LSRzWtpCy mM2NmiMcCQFU85KhmklJrqbv8PI zdbFs839hODNdh8Xcjd5 5 5IIahBL4WgGgl ZdeY7g1Vc8wVMquRHB tNM0WYZlLKt z7 rn cs4PJuNEtN7DRvO4S7W35htthqThh PQofwsF1zNl8PTnfksPUlw5SPIdfKZ RMXtJdpE4av2tkWB4 uSDQ1M58eAJV1H714l2d 9m 3dKZ 8MuSvCCLr14dY0C0wevLVik alZpFBbiiyAA f66K1vcPapNGVC1eDU49S LLAkzAH3trw0pn0spWMnHved2QA hK8uKiFlAjzQ6B0oNjHUJgF7hD
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  108) oiBZMcHTbVWRpvBXZEZ eD95m1sSBwXPMqgSl5XdnOiMFFR LZq j ozXYRMzZe05g kxc87vImWchLsZN444Cj8yD 9 QjTLXcKS9K7Be JmSAhwN7ys6TtGqrcUhSsghidxSqWw NV8rIxkvgRiTjQQ8sFRJkhgrYv ZWQfYaWZoi6G7KAEZmkwwlV0yq5M yJUOEQbS95nyR1LL6K1hTFYGXa8sC tLKfdslAzfeymvoaj2zU iIsfaTY5Wd23R 8cXrxv 0sfiUnt2Rq R03c v9EwX XJtayRNoRu OoL0sanNtKNKm
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  109) KeORZC kCg3Pez4wWz6iLZREb JVgUVN71ZdGjvn BZkIWdic biTczX smFluazm3l5EERVdcRwUf2DgQ 2NxILB9ozbJOHRCgr37H4wBf5P q99ZW6rpX4XJlpXf1ShVnwax3B XcSunjoA1NOqGmRR mvGyQjKyaKBrdbkvxH e2v0bOCR CXwTJ7VlW8OlFIzgbIpI fmkgA R8Tsn6bgrbOTWTQzecfCoZoKwXI CuwdVzRUiSkqV oUW6AvNn67ALKvOylh4Q0UmMqvOqJy cCBzKo21 W0d9b5o7H8Va9dHS1M sB9qMbnnsED6K Dd6BI7EFvKCS4Af4yedANHUtsye1oz
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  110) nuCyK207 1De1jW uL3l58CBaGFZo7Al4gTSlvhnywdylc KGpO gO5kgYU2W 0sCcoD qkwVCcfhB Bq3mp 2RKqjGXk48kc48pGJD2n0 H3vr0eGcLazLIL A7XzYjChRUqu ijEh9HQDrqnemrOVx62kTt1SF8KtJ9 Hi81IQShNmZd8pji40F9Qog4l1oJ 1DStiEDW0nxLSzN94LOvzJb H6Iv78iY1QR gMzLj3sG3cZP8c zaVZdsd4joeZTQ K I8bW7DnvZrEQwcz 14gudu8gD1N5T
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  111) oRXcYXy8S jZhdUk68AETXYrXVuEGcJZPxFgWrT PuH1A LmKCgB6 gl6i3GXqjwE S1BqvUoOCt6F5ZBdj34WHP3B kHcN9QHkOGwO3BoJuT6j Pl7heF59REYAqkPrcnn2CYxOmvbXA 5dDY06axt2KTHYwMNHqTHTVhCmhQ0w tm1YAVykTgz3 J TaANI3DcH7wj189huQ ZvLjzVoiu cN8nISkCx3TO6btmr 4p72qb3qJ70C6uPUyOU TAgx p3bskrpbGtSm9olhqvEVSpVVp xwojop1q sf s1f0ucD8nyUB8Wzqijd7IDYBlsv12c
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  112) c6sSzcHLqwdBciNsCT kK02RBwkUkmSiqrMFZp4vseMdb VuRJj8G8yK1RCyTGYcw2HNc30BomUr sXnzTo9TKdT rPgqwtU7gA59NR dZWME 78DEcLllx Zcqy7GWih03 y30Y MWgp82wXM7Im xMKaGPbNFQ EOjryDSch9Tx7H9G RghTz3du8yCn rHleSEOW5RzcApBZk8wpViAqf7 1cYewN2HRYixprPQs7Fj RsM1vPB LW87lRx5wE9YhvxVzYar3rwbybuT 0bgrsUy oMPW7iQOwL1muwDw5d7WmeySrqCaR T7rjRmw
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  113) Uri EhAUsJAKP7O FQy3jgVajbnC 2vH0sFwCA ddR4Iiz7 wQZ iWohk8F3J8ZMksx8NK3al7qUDdx rpns2OQGZDwCzeH2 hvKTsHBvk H0vzfsmo5NdiqWeA42dP0w KWJ6ClhSAGeqiE C1hF5 ZF lc7oGWZ4GGGC UGpSfIWMwpWlRT1D2q5e7b2kmfbD iqQV LcpNvRnMRGpwRgi7thweqmQ7YRH8 ievorFadhvLXDs cUTXc1fE8 ErcCRyaNnkzV3
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  114) uAS2wiCxV6 4FitZTpOK4T9BypaQr hcBC3HzOtP6Phe0V0ohA8Sq o9H1feyJnphPwt9rT8du EKv ZMCf8alg1EG40zu8HXoeCKojZcO vQg9AJT9CvM7DtlS7qgoHrUwuW oo3AchiqIPfDutcz3bwSxaJXm 5j2PGzr6Do0CPgq2j7q2GNH 8Jj9vmzJOSJPV1cyV0 U7hPY2DYV0e18jGTraCmF 2qnNaIjvyDjJgrSj 8GJaRislkT8 Jj0 wvmEegIzfXkkMsTjf6dobUWuT6O5 9dzMVcUVW3CfbPXkO3X wSflDX1Gnp0oi eUc7jJVNYZSbJS54wDVh NawIBxG3t9OQhWVv 8A
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  115) caEnYSy6CyWHW10uJg1fyuPuhSMkx UHOdPWIR4r0uQGeSbZFogW2P6hEl VnaMrvHYHVL7DcCF3WZjZvEfph8wQ a1ZOt0tjRc2htecN Y1 rj2S4CSAzKmPnVk0 C1eoG9UMOPolGGm UVeVGuUCmAezNIGFYzNjDmHdaRESyz AK83k7kkqUW06kDCrpUgKzLAhm 95hVLx8YFjt P6z5Dr IGqVL6cuuNOV3c9sy7p6nqOmp65RzU 1bVNZtKL hbnVYXjaEEIaVi 48zeveO0dpu 5S IrYOdh9SaOgX2tsmup4x1f17 XnJOr4E3Kpbw4L5bYp dmZJcuowiJcpUMct9F LM1dCxTQlDksdwbcLZGAmS
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  116) bLEVvuSDzWBkV5MjgTwsUoCnV1ZkK d9OMeBTldGDdQb9LMU dUFfiAMeUFtz twz9LdM32AIjfaV5gDpxTe761R ZHRvXycBgS3G1mE9S52aKer yQ8L9fcL8vg4N8mxntLvdfK AX8N3G57WEWqdz MTrk1ADCyk 0e7gsDq0PL6d5JBLP8 TRrJ4lmeZC6qmL8he6g8yvHM8 Q6xEAnMzQBkfL LZJXnsiF9XyW SCUjtTb6wexpkWzawHcghMix8 iD6XP R02kKSb6oE6QRmh0qNGVhy9JmHLv 8FlZJ8C6lK6QhAyKLo0Wjsx8 XnhPiBt2Et13iyL6 L5rBg08cYKsivXZfoZcUSo qSkw4 sHRmQnE1
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  117) Tc IJEtDKzz6wjNBo KDp9vyQchaUgDFKnAfuGp peghQ h2f5FLoewwHeWB3zjpsw9YhWY eNKpzT1ZyMLmlwvv bwU5oWLjoY35VAfo5zgABmrSMi2a EzZmZXmxFp2k3uttPj5KZv 4N8y7qS1uEAf2 nfPk9Gkj4A6W1NntI3NynzL 2sXK0DdWlzWof8KI snWSm6uKZXxX1eN18eNB2 fIhn60eYWFEul2q1kuMz C0PL4R4pKkPc05nHpU prgeMuGx0b9NQgXyGnrzv sixebzZwiMMrj SC5 xzHdJQZjF RZScjofXuPnsDjFiN R4N1XyukgfCoAqUfvFJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  118) A3UdhIugW6sWd9NRdFIvVO 3nN5 qcEFNojxziBt 5j4NELtHsbGdBTnSIa4eoxwP8n98x WKxlmJd wRlCo6n04bnFS XfqYj6IsLNOb O i0Ssiy2GhrwGISjmOeu7MGZtaFTLGF 5t7hSsbTyJzrju30D5Q 92 dmSyOZjkLUHxOpp9LrsHlb EZR8gEAI1SRKLBe3mH MUOpURLDRQU8JejmTtSm fI7z3cIW3r LKgoSJWoMWWlBWhDxW01U3ms 63 FDivNw qtLC1ooM2 RbY2hsddK7kneAsBOensl3V
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  119) Tf OmBUqd2GNZpLkyTfEl4yvNnS L2eMHelCzVFouHWCeIVYmDPCmzHk Ikf9EUAnl1mgfL6OrFB5hb2OH RYITzmp49u2bgXj M4HSnrV45l71syoe3lzzemRSQRam dYAQZ6a3s0E7mTPV OH8 6m5fyxNppMGkUvOtt WUowblGj O aOacLW2ETkEZl4s3U 6TEnku49XfBQ1OWVaUWC9 36xlIg bAufvUpq67J2eQLujc2G vhPs2PvtXOFlcsMUept AGGIUvqhFoSBYi1U274bsDQ3h7eM ezBckV0CQsXvtRKoedVhR9 qQgPmwitfeG2wiQxHV1AtD4 AEMRPni4qHZJXWaSuW2IevnBCy
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  120) 8fN7uV40bPSYlNexSVQ Jhb8RIto BK0AFX7fvlvR6KunmIAmVTLYm8Z FXC9TXH mj3 TxYX6Kg50x4H2ca5Yi0noiEXAo th9zdHuiyhMsehTNFVR RYb6bMYPWa3c6k 1yEuTHvaZGvycGpJ2Gm enZmtxRHOQS 7DjhFM6GXou3o1kqstkOZ1CyVDSgDP Jr8VKRwIdXgJejN8W0yF W09MEyhjIiRGNCaH4 Q06JvqieE97nJ NF0VMz3PoNmn6wXyMOKlWJJlmJp60 WHskYCo6ut9CXkWiFSatwcfH2ggCwO j5bPLSYdmMVe8XGemRS hCO9gctn7EfIKlmVkJ3qnRDt z nXo0BdsdmOMtZpfko4x1ujo
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  121) 5XkeftMcmnDyf ecTterjt5d5N32df7iNq1SnXulnn 3twpqoMBLCADz95B Qxf8nbzsF2NUHYvrsfx PWF Y8mNzapjFwmXtwW1x06g5qHVbyq dgNdMhPR nqyEHnJvwfxYWEbdw ABeVh0RnZhehu1PWX4HH5KOG TTKLVV4c3M3AfT dCP NeE1X9FNJuAOV2yW 7pY4F4XAMhEUuRsXhOqIH5qEsQipl ONlTBU wp en7rl2W0 0RkwJEbHYUfs9TzU6LRw7g u H Dif7Lkl
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  122) mUdpuNbT2TYPtA7UY3FAHNdf WKXZL0QmmJ6D3933jpW2IfM FVO h6davrV0B BnMqYGlp rDrL7gqwAE3OKoL F5Ai VKQmkpPoaOPDr cdOvNuyHNvzCLGT8I5k99 kF H oKmiVkYOiE7ZZYjE qDhSx49 V52vqF9YDRemURs0qMvFnmp 8P5wzg5jSfUTxTk8vHz5OZ3Rh5Kmp 0xRP8ZrpimdZKAd3iY1 EqdEL0WvT03sZZxNvMbtv9R7 y9lpJCJ wfU8yf2s77m5xd3dnSklVEZrakxlTh KI7J4im
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  123) OZJ8wFH7nKuo CrkZWXdTFQAj npoMMtFKdk0wEoi4t0qNCIpaJ3hnaJ Vr1uWGcNGRDlgEPC3ffoZCGrQfR7 tZYyh7YJBuB 7aJEEK0PNAdJk7uaiVOyYIq2 l08Dii2cwMyimY3vw 5v3800TKPYPv9 RPmJIJ3wsBG 0KE9Ln2np EaJNNWQKnFbQ yVMfb zmfL6ML75piw1ooWLFaO fk4dowpuF6Vs37oJan j1P4zawKWs7IjbNqubKnUh1FXgWwE lP2vEl2Y2K1uzkgNyP6D6ADJFltg O8Ab3HdDrfnpd81rW49RV8Nm1aYd sszEsxzAhYdtM4tNz8fk49nVIvLEN FF5lSkdid6ZTU3XLngVck5 O3UJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  124) 0K11XnyiAGk8zwgqFTAqZ tfcyrw2u X6wPJ IuA5k9LsdNMiLzHQjzIX 881lwGU3CILk5Rr 0a6yO12dJ2EC3xm8OczG3RY2e3Vze d7aSgbPx aPSegUX5Q6lSIFBgmi T8Tv7qjQZqIYv 732G8E2w1HTYp5vAF0ixD9NDlI5P FJUDdUaN8xswTH 0sZrYWnQ U8jSakT 8S3AfDNmtNb65y83Q9e pC9pde8iO lIdW4kExTDREkH2Mz FxmJvVEOa 14IQGxkTPTzY0R0AFNDH ofU2 4TqmOt7qDWyKNLU2hgWZ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  125) xuBkokoGbF7Eb9zeg9l4uDutOBq 7 eYoWOmKn3uhNMOkmvHz36E4f 5kdPTXORFdy5D8TfaqQ9 tL xLOja9iOdR9VaJsvbywVvr OX6HkJaK MuNMi0utCGEapKQATnbCl fYp0KIbmLhfG1IF NHmqFXd9VRpOneGFYDX NsTFdnWvDHj4Mp3g E1K3ojoGmlBQEaNOPkK8bvIyaQq dyhFc ULiv9UZoLndOLY q8AjvttqOEgbmrc0l VK5xCIUJ7AJQ0Z6Vnu6gDNVrkW aVK7W7fCC9B07PnlYIqrf3c6hzl G1SHCxNM4Dd6fe7AhaW pDBhRJeP lB
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  126) CQwyRmq2zbwlfOTNAU2Kj7 ys36ROqmwkQMwtmN d2VHtzyffW9t59uUZCMQnOFWISDB AvLrQCQS0mzkolKT41U3iL 5DR5P3 lPIS928EDpIt1RmtvX43i PmdCtek8GHcngVZMa rA AqoYACKfLGt gxVDKg CZDN8Qys5tVD 4BRoqu0SZn2FuUeKjM nkQDiTXpW6abzKAVYzj cMFhljUkDVUM6S 5nCdpG0lyzaORlX65TCqacBG20qh xNuaNHJCpqMMjOIKaKtjgtp1MUv Ms2IE HP49 ckHyzS2b Dc
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  127) lD pE aaR1Y1gMXbH1ukMKiT 95rBx728ItLjarRo CiDGY9bi 33c1m2mghhJC3j5SaVruuZN0 kkej5GR0U71i LfTef8GyIbnM4fwfi69N2E6wD4 nRn7VVCOBquBr THUOOikvTWY8k8rGHZIJYw wRBbGFa7rVGN ZZdZb1WaiH7tc9kds pFN aVzPvf1C5qUO OulVdVlFp60kRDBXvVzTiUN62ro G fwAWYMKjZbtwDnrMo URxecAEaTDDQXb8m5NLaUwOK RVPTVqzlNmr3CQu31hdxClNIloKMGm Ffl8iDdMCN0tdNK9CbU9W
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  128) FC aVphhLRrzfk9VJ 6Hq7mJjJHa0lz7ZPF IRhQsLPRynj ANGBw1ma1jASS lbzybZTUCE4H1GcFRG7jPC6zhIBSwd N3Yic jAdBeQjxq5anmBNDH JT1zkS sdQoMUC89aLa wcYz2UkrY2KJmbFDglDt32U BAN9 Ue 95ioSSGxpsqwFCRsU 0FgrdE3bivooNRDYKw e2BXSpwzWwALPAFnBPfLQ Gf1qFUuK 3GGzzcWtPKN4hQF FCdK PXLpVUuCtyYF9zsDVzt6
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  129) f7Z1EXSVHj wDN7bBlT4qZ6Ao5SA Yl qpM4kZnz31JUMGeO8Kcvg 9T4C0 6o97VZcA9uWTjrllOahsj 1Y8AaGx44SAQwokBoNkpp nXd98QuflanLl6MaSc6ifqRYlcMm ZtlHukrZrL1phXQ8GUWDz 3DIPt gFtb1mEohXtw5xrXqF ACIQNUQ1E5uwF 3 VtEboXbAsFDSdLlDU7rz gTI0eO19I keWKfRpnFeqAvrcPKLTudjD 0MK8exrlNeKnBUcKfvr0jY7h v0jUWXU5K1rtItC6SybMt MwRCIoAvDrXEHT5ktZ6 bqAyRBbMMuB
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  130) ymOUt nfl ZwwwZ3LlC4Z6lVymL Ske3PTyG5tk 91big41e1 EHefs1mBGHNtjNSaSVAbzAun j2XqiVWpirKpbUkezHIpN4hAWVZ j XUUuZpgwGQ6g8 VyIi6Rc 9m0Vx63VZJBmmV u MheCrB UjBXsT62wqLz424YP82VTjwJsk P3QOdHn4nTKP0NJt0cZ7xdBaQtu Ir5JC1ymzyvid3IS4nMYT1m8Nbhg P2ordqXG0LaM6 TfC 5EcBTkKww1SCFa21XR1 4ywk4BgeGdfZ2l97n
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  131) 9qRuwh1LjBtu53Q1lyJP2fcVyHJXUF Du27DTGeO4hegAZIIJ 3cxspv5tLd3c2eqHfCNg0Aa OaqSKwfNVDPxMuqbb2GsZ6IC96Lc W7GQAijUUbulDnE6 gVM6tO7 VF307Df ZNNqPO5LDHz0ZjiJ VF317EDqc63VHLVka4 xTHImHoSnP2GJhTY1TvZizEfFnOmAz 6aVzf3gz4dVRbDp50TXTsl hpdc7qaZTzrv JewmhlIHI Spvq0TPXVybmm0NQAPbb3Bji 8MWUISrww90 xYGxCkdmUlgMUe d8 S00RwwF pWzsiour3Rxz6M378Cr3O1LueI if63xitUQVALTL5BH0FNPVY
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  132) NXi77jiBixa7FALbF4 PXl YfR4asT3YfIyN5 W0VUvBYxfRDTOy H1ZFR0kZ P80X0LDt GuVLpY4xv91zSuLuBGYQVyyVRi5 X1bS8W5Kno5FabW99uzHy cIw4EaFgXZ1PjM 2abVUeDLv4qdeZSECCbJV FNZ5xLiEegyjrIYWz3TDazEu YBZUwfuJDuEgAl HIsz6nfGN dy7CKCNmKJe8sFWxnFP IM4mSmMf07eSK0Cg0AP g f 92PU D6 GBdRlS
+ S00RwwF pWzsiour3Rxz6M378Cr3O1LueI if63xitUQVALTL5BH0FNPVY
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  132) NXi77jiBixa7FALbF4 PXl YfR4asT3YfIyN5 W0VUvBYxfRDTOy H1ZFR0kZ P80X0LDt GuVLpY4xv91zSuLuBGYQVyyVRi5 X1bS8W5Kno5FabW99uzHy cIw
+4EaFgXZ1PjM 2abVUeDLv4qdeZSECCbJV FNZ5xLiEegyjrIYWz3TDazEu YBZUwfuJDuEgAl HIsz6nfGN dy7CKCNmKJe8sFWxnFP IM4mSmMf07eSK0Cg0AP g f 92PU D6 GBdRlS
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  133) Gb5T YAVCW9UDOAdkqGyf VO51gLD4 wci8ka8hRhs MDlpDl mByorI GWTFi851zbXFl8FHs11WcgalDsGRY BFiJbXBIQGud6JJG 3uXgA8jEyCuD 3FAlyH9UlDETilCWRnH3t WxCzkud4Oslus uPf7LYY9cwcpRHZAwFmMP1KPG aEMyrSOWgrJot4oReGg2 kDcvl6KM31Mh5uwMXf9OO YGrmknMCImnR5IAwPJ8 34CtkTZYVuC3kBTtnNvsFub Jed Ae1hghpvJfh2rRszvjo4cdyimlcb cFIzUa7ofmwFZG2j OOl
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  134) YeyotgVnvesqS5nSxJ3 kiijDaUUTY7Gn8qtP0EPvua01BzLXs TX2FBMiS0YgiT8BVd jpwlz1 ZtaqFwcPsdxKIRiJ rxDOZlogAbKkffMF3r fNshKn65oVLhAP1V7da7fDiJ jVcfZxniMBmHtOZoT4ba wKfUuV3387ePR3m6KQ2O1syqD6nV7 4BaivVSUPC7XkgS6C9GBMClbD0 Ez3GiJMLiH8lUVe9TqODX2lu3WY9 ssIx2b m9dE vdwcOV wmirF1tNEuOJ1eXZbtZfYXw fbitwHYjO5kM9fTgIK1ZXVY3Fw 7KYijLfnn1 1n4wrI8RR8syLmhA xGveYWftaud4jFP 9MUpRLme8
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  135) 5SMsS2TgWSO rxJhCweemZu juO9 O1 aTIAvLAsVAcQ5Kj DhxP51z6QS7PFUiuIND5Ity6 eZBE7V13t W0xHG2Mo Yl 9wG4NOWdW3n3FlxuTZ5YD4f2 ecOUNIaP8luBO5 IcxLUrOb qNJAR nZ7QDLE PFlQ298xdpFfBi fh9cIdlQtrbXT IDMBEOrZDq1JWvpHhLwslbM I6R3 8LMjgLy2yg5b5ibjLaopw ItWNd7xfQpYLA6O
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  136) nKvtxWlus3LH EC0FDSfuAGbCIvGDXgwBd7DQVM vZT cKkoUZ7KHvWHsNhsh0 LPJaoezdk th8znK 4Ayp8Pnm6evVagEXgv H0edXqlwd54bYcrHhF6 THGzYIM 9rVKeowd9kTw 5pNRKnCGwNZzSF5LobY wdZ1f852JCz7AV sacvJvvExXsmjwoMzB9f T3JsmWycIu 2n63KkUfBrxeK1ga DV sKbTv8WaHyQx6SUDp43qqh5 RZIhBrnZ4Gz ZWch73RsNC5X fpwVeI8Fz43a7zv5j0C0Gc6gSiHoi
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  137) hXJCVwiwlh 3HLih6I hjnnacLh81uWLF1ktPdm5Lyoy3A2 OYSsZMi4W1JWQZWAJLa GdGYMN5uoLnD452Mhzqam6wZGiU 0DV25DBmVTJOD 2ZRoRvNOwdIs4RltQ INGiFM546e9H35kPo8cTE6CB fGnXChTz9SeOxmvxeBwPW3gS Bh5ZrSwfJgPSo90DieU2mhrGaplulY GYBAi EKbUh7z8NVtLW7SUKMH S2j7p1t3jEVoXLAErgq blyimQnzMOUsEWh 2w3U8KuzZuvifmRuy8XPnxJKiGY2fw Z0nD3zVw45xN1r3kIjgE 1LR06t Um26YgB39Mu q1JQzWLeWlSYi x
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  138) jb9bQRm3OmohG UqZHeWFGDsizQYjf FztdhJ2oyneCwyMfy OV2gDMBuyL86sNT x 6qljGczvbjFg2DIIjs77 20Bvl5Xrpy f 1GbzlhHRsfXf864vc ookv4 5mVl1UlaX2Nbf5mxVECqmys sLZ748B9Ff1r 7zvhTKuUwXLHB7eOu Dp GICB2yWCUxZM435ZJJU tF7FZLiSeVI4vHDI DmdA4sIE5 AhtmNgugmJs9huEPYdh2w1PaxKsex LPCyIS0fpdrmbSMyMlzIBWumrAF 2W7enMBxC9JSnkl
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  139) aPzBNDBCyGdKZ slDxY2EsYrRec68vKkbjHVKtuLnj6K GkWD sCmen RAi biTbUHjFVV0sqNtu9A r8jOvRSRheRt6QJEJieKSYailjkj oYWZNViakFFJkCZdKqEtdNo6 NZv Z3nRdkiJzi3Bow8IDFP9SH kV5VfW76LSWGQylQqfna nRLFNHH7709tgCAJSs RfsVRsKuHsNgAlPJFtHaNuB4k5Gkl8 Y9RHt WZNn0ihosOv5U ZT1uTuKY srehixcKeW3Th2fd Lx66iUPBoNMacSercCZsd 1Y7ojK9CdZe mzJrFCpI
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  140) j4ixE0cdrKK0G1fRibx x2gtt6TY9awS9M7PNeLq OKJxBHsnzrcPgSuG9cBcVd UH1pNy9naYnIZnQVX eWU6TDSYo4k7O kvJVcdwKrfrNURpxv msg3hzHAM8SGafkiQEdpV1XSWMWI0f g24gT DRi0SX0bjqN3S8od nY0yewPw ECBPQ3pZQMt ivMvlS8 9ZcKhkQdvAXTAqJfdCcXDt rvDuhEFLlscR3z2ztdMJ f7tuffQYXd20Dtj Fig147rCwiG33eGtmTBc5WJ KDpjdDM JbEZkP64pToi RzRlXUzySDDZk NdFktMO5rfxBv5eCU
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  141) xayICIqR0Mm2M7rS4JoaLe3 I7C 8U5stj4lITx7DQwL9DZmkxf3f2D J9oY9SlKPw6seNKMH1n 8qeICfCOw5Xe69 lPC 05RkvBxRkP 9qAJaxJxbcp71w9jFmcK2iPJb2Er3R yZ0ixCxFxhfzIqx6dN9cTC3ldoGG0 YqRqlb1jzlnMcQUr 2DMjBi uXmwgSVtWZv2fn f9qDgzuPgNow5dY72fFskXpM LJU vFQWUiDxBhTdAhB5tkWvVuIgTmx hPz4 ZXAKggSt4K0ua AI2O3cDVHfumNAR2ww765CUk83umY 6AgCs9fhvb e8k5h4tHZmJm
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  142) 7xmKHjkSL6XPXRpM m4K7 1SNTA p1R4wP1k cxpz nmu KE 27sy2mTj mQg H8vc dcEWYBff03PQPlyaNnDVRnoRW05OH 0Fy8CWgWRBnPGeISq2TEKLO dlh8pWCFRj8AF26d80yPEoN8JVp XjThraHlX3bSe8up3oZMVE iwNEZsKNwJJ1FpCwJ dyqLAobwhBW8O3aiAIg3JjAuGX DibI8aXmaLhK39Ej3v9p2ElbtVzWQ on7Zvhn0F9o4Bi6SsgL3XO0e8 dcfsZs4N4rU2qYJIjktphzEW6gOg7k bt1SUKtfXiSxJ
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  143) cxhF9UVnzUO9vm2woIbLKlwEKYTn pFsrKsV hLruUtGODJW7gMEX b C8POrvRWoSljvy0l4w3y1tPE9b Pb903gfiJmUfCKTlnNzamP5hQq e17 7MfTXB8DeyV1vHO7KLY AbvA0dI8Ww0X3mpqCYv3w1 StlfP1o7KBhf1XAt0QIe WZZMqXz e HbRQcTbZVi6oO8iRnQf0OvsZ7HvV BLnkhmTKzzH jhXTlvcHLHXzSmHjUWp73vXv m5WZfmAczdku07KAC DjWrCGtnijfSBXsEsoHZpCBb1 WJ8zo2AThH5e6 oMHMvXyGRcl9 pwcfDFM41IMOHkEl7fgS3jb1
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  144) bv0lpliTXBrP9MiI7Yv D M Y t7oLxkZ93xB6 7bHv EZkaoN5DUeB15L51m7akPwZLag J3n9mNl5xbBsYZt VgfrBtZLqXnyvl5wD6Vp85TsqXoUK orKKjODO F4Ypp9gtyH6FdIdvRiSm496P bonUkJeZxta4 kPGMf4MZvUT YV T0vHk1fGGoe3IJLHk3KjLUpP1wUBeZ fzdskL6rEuDIhuKlCkYfXuD 6b0R5vLLDt31YWn5YDHy8sA5 BaapQDypWe7EncrC88 7Hka56n XSI5MXRBmFCd2p3
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  145) zQWj0EDmnqiJfqNc 8Ni3esB6KeBJYMa BTXFspI 97S AvwA2RUOV5lB BI9ukN36ePM0Tv3zbo0v qigiKNJgtxl4V0E P7KWDx8W9NajhkV3M3Q sIUx7Bb3PiAOFpzI7qYPEAf6fJjzWf nXauKOnlWpRn7Fis DviSNnzqHv5qZ yT3zReea2wUJtt9YeBhYJ1g ndthIS6o2nbBkWr5JSf tYoVUeU bcx19XfBW 3Zy5m4FZfFeayszW24LMB2z RmgfuyKeFkPKztZLqeyFgtAri ao8sfbs0XPaXpmuGAEvh7RD1M1 Aa6T9C1vhqI963epbC41O SGjKa3SJBtcEslMgCG
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  146) F54VU3jEpcr7vFyrHJlTgWsA4 xHsfhXsMaMdMBa H4MgJ8DXcqob LuXQcTaLmfRQIpc8HdzSgj 72VVYpDO4qCCWmhudRR U xhQC1dkoXgvFFQb4lJwMsskK9p c2trmxVRE0 zh 7iCpY2lk2bfGahOKAXC14t9asz zDTTpXMyIL3kkmfnLPHDULScb stv7pSXBLSqgNXo3bqUnf2o iKBxRaH0WehsZgKToRfGiiZRP5A Ic0LwacYFVoAxvLu mrD0NTuvFlbwOD5LHRS YySitJifSIbtMm4jVsVwU3KnZ3Y Ph I0cuodME2YTw8gOAkNYTvkk7G 3e vaObnerfg2dkyrXO0oXFhkIpN3O
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  147) 6MbuXshZVt omXUeNcf 8Qq76HaiUrZ5WbKbX23B fM7dbcU3gj0FLYErKWNn1 eRW1Ml9qa7KeiNQL yz j1mZ9v8GHpsCayuYR5YmdLCUrOH A2nXkrO5to9O hBcVLhGA kFZ6j4tzpzunAxFTEJjyFmThfqu fPRJTLO9A65sDj 6fBrNLG3GWhEmI SozbL8 7cEgFKEUt1WXn7UbSbIwo 9vZanG 7Lo5w3A zlxdZ0ZF2ymhRBKsPXYPltm3E 9TqQR7yVxILkARV0MW16XGUHr6adc sn6TztO1YhJ0zU1Z4p TfHmKd8rHqOxLLrueHvG6rnlff2fAR
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  148) mFq5JeruVE0jqG1yULsHV9lb 7fabP1xf5V 4VQFixDnXJdM12OYwhr V8CnMCrLuv svByQiuKAfwsK F HCSfbEmfYY 0lKZwBbwCr3Ba7E0evEe P9a9pXSvVY2t3YCYYcx7C7 WFbbKDTF9vTLlHNY 7S2Lmx 95 Kob6OwV ZDm4MU7WSJT1gKfz7zFPiqO hiAy9FccJo9e 9CZd3hzwMFA1cfpxX Ja1sXQpDTOOqmF VypQr4h AgMvNF F31TZ6Pyj8Mm3YbEHn
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  149) TPrkPhKDEKfr7lQgrn3arJe 20LYhNg 8O2r0sl9uSdux8RRgcuRNpsIj Pn8S6rb Qt1pMynCDfW 2ZSpg5loK3Q bfee6Vn2ZfnDC6VS1w q95XN 4hYxfxP c0ywqCmYAibpQy1SA2t HT1l bhcVIsq6qJ27 K6 BuX3zCEseMmVUHw6kFJl5fN1p4w7t pyrb36RRTZNY5aruW9i6f 8awX30DCY5laQ2tTE1gGnlIx hMvusxoWIfyGqFJPsntvFXfH tRf9 9QQXflME0LLUrwUi NBGuRGxH
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  150) 9dSrZe05MXT y586preB5 38dZwvt2Tn4TyhnmeAK6b53I1Z9kp gAzx2FapAx6 tUHLfKWPOHAn9WhZK ZkRy0noFc2k52vAkGpO lRC46tBbtg9Zruy0V2Rvx gjK wyK8pPRlIO35sh70Z4f3Z ur2IDtLoN8UPfKTf PLZGjMyb1iJuF05S NUKJzSDHP3sVPxEZH0egwtkPByMgX BCqljPPxfWAYP99Uc glkKmOOWF7yXokvgFz AUsu1ebbuIPjgkY1 pKRShFAQznSI5qaClyFF7 WJyC22oDWRAs AyiaMsJg tmlfwqPaR jYNxT
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  151) zWHzBbjcDKGeJ33x9PnXvypjBoRb GROID1gLj jETjOgQ jhyj9i EjaBvIJqX YKCRxOR55aLufb fZdJvvygg hC1vtJSjRVXzfb wEYBqeGEoJqf6 4398b0spSt9YdG8k9f88x BBVwAppsjGf5pjMh VXmOonxBu44VC Sn bj8lKRxWHFtKyfJmR3fgZj5 mq4MsRuXaCTmgZa13mi7yvrnD5Pc 96XZh1GwSeTpIeN pvNIHaRyhFEdm1uCn rhrfowkizlSxL 1IPDa8CdBXT hdfhHeob
+d4827d27 (Henry Garcia 2014-12-19 10:01:21 -0800  152) sOxeND5F3gwXP9IATlkbliSki0g2Ic l tX3sjXERHfIy3m62uOrcbx 2j2mL40oIyApj6cQlbL7wUtT DU 6ss7fksBjeFTlrE IVS3omacbook-de-yaelin:git-game Yaelin$ git blame cool.cpp
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  1) #include <iostream>
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  2) 
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  3) using namespace std;
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  4) 
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  5) int main()
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  6) {
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  7)    string mesg = "Hello! Who are you?";
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  8)    string input;
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800  9)    cout << mesg << endl;
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800 10)    cin >> input;
+3922a6d8 (LinusTorvalds2014 2014-12-09 12:37:10 -0800 11)    cout << "Loops are fun!" << endl;
+3922a6d8 (LinusTorvalds2014 2014-12-09 12:37:10 -0800 12)    while(1);
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800 13)    string reply = "Well, " + input + ", we hope you are having fun with our git-game!";
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800 14)    cout << reply << endl; 
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800 15) }
+ce59bbfd (Henry Garcia      2014-12-08 18:22:35 -0800 16) 
+macbook-de-yaelin:git-game Yaelin$ git checkout LinusTorvalds2014
+Branch 'LinusTorvalds2014' set up to track remote branch 'LinusTorvalds2014' from 'origin'.
+Switched to a new branch 'LinusTorvalds2014'
+macbook-de-yaelin:git-game Yaelin$ cat readme.md
+git-game
+========
+
+Looks like you found the branch of the evil Mastermind.
+Things may start to get a little more challenging...
+
+``Level 4``
+
+The next clue you are looking for --
+   is in a file you choose to ignore!
+
+macbook-de-yaelin:git-game Yaelin$ ls -a
+.		.git		LICENSE		git-game
+..		.gitignore	README.md
+macbook-de-yaelin:git-game Yaelin$ cat Licence
+cat: Licence: No such file or directory
+macbook-de-yaelin:git-game Yaelin$ cat License
+GNU GENERAL PUBLIC LICENSE
+                       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The licenses for most software are designed to take away your
+freedom to share and change it.  By contrast, the GNU General Public
+License is intended to guarantee your freedom to share and change free
+software--to make sure the software is free for all its users.  This
+General Public License applies to most of the Free Software
+Foundation's software and to any other program whose authors commit to
+using it.  (Some other Free Software Foundation software is covered by
+the GNU Lesser General Public License instead.)  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+this service if you wish), that you receive source code or can get it
+if you want it, that you can change the software or use pieces of it
+in new free programs; and that you know you can do these things.
+
+  To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the rights.
+These restrictions translate to certain responsibilities for you if you
+distribute copies of the software, or if you modify it.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must give the recipients all the rights that
+you have.  You must make sure that they, too, receive or can get the
+source code.  And you must show them these terms so they know their
+rights.
+
+  We protect your rights with two steps: (1) copyright the software, and
+(2) offer you this license which gives you legal permission to copy,
+distribute and/or modify the software.
+
+  Also, for each author's protection and ours, we want to make certain
+that everyone understands that there is no warranty for this free
+software.  If the software is modified by someone else and passed on, we
+want its recipients to know that what they have is not the original, so
+that any problems introduced by others will not reflect on the original
+authors' reputations.
+
+  Finally, any free program is threatened constantly by software
+patents.  We wish to avoid the danger that redistributors of a free
+program will individually obtain patent licenses, in effect making the
+program proprietary.  To prevent this, we have made it clear that any
+patent must be licensed for everyone's free use or not licensed at all.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                    GNU GENERAL PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License applies to any program or other work which contains
+a notice placed by the copyright holder saying it may be distributed
+under the terms of this General Public License.  The "Program", below,
+refers to any such program or work, and a "work based on the Program"
+means either the Program or any derivative work under copyright law:
+that is to say, a work containing the Program or a portion of it,
+either verbatim or with modifications and/or translated into another
+language.  (Hereinafter, translation is included without limitation in
+the term "modification".)  Each licensee is addressed as "you".
+
+Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running the Program is not restricted, and the output from the Program
+is covered only if its contents constitute a work based on the
+Program (independent of having been made by running the Program).
+Whether that is true depends on what the Program does.
+
+  1. You may copy and distribute verbatim copies of the Program's
+source code as you receive it, in any medium, provided that you
+conspicuously and appropriately publish on each copy an appropriate
+copyright notice and disclaimer of warranty; keep intact all the
+notices that refer to this License and to the absence of any warranty;
+and give any other recipients of the Program a copy of this License
+along with the Program.
+
+You may charge a fee for the physical act of transferring a copy, and
+you may at your option offer warranty protection in exchange for a fee.
+
+  2. You may modify your copy or copies of the Program or any portion
+of it, thus forming a work based on the Program, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:
+
+    a) You must cause the modified files to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    b) You must cause any work that you distribute or publish, that in
+    whole or in part contains or is derived from the Program or any
+    part thereof, to be licensed as a whole at no charge to all third
+    parties under the terms of this License.
+
+    c) If the modified program normally reads commands interactively
+    when run, you must cause it, when started running for such
+    interactive use in the most ordinary way, to print or display an
+    announcement including an appropriate copyright notice and a
+    notice that there is no warranty (or else, saying that you provide
+    a warranty) and that users may redistribute the program under
+    these conditions, and telling the user how to view a copy of this
+    License.  (Exception: if the Program itself is interactive but
+    does not normally print such an announcement, your work based on
+    the Program is not required to print an announcement.)
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Program,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Program, the distribution of the whole must be on the terms of
+this License, whose permissions for other licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote it.
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Program.
+
+In addition, mere aggregation of another work not based on the Program
+with the Program (or with a work based on the Program) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.
+
+  3. You may copy and distribute the Program (or a work based on it,
+under Section 2) in object code or executable form under the terms of
+Sections 1 and 2 above provided that you also do one of the following:
+
+    a) Accompany it with the complete corresponding machine-readable
+    source code, which must be distributed under the terms of Sections
+    1 and 2 above on a medium customarily used for software interchange; or,
+
+    b) Accompany it with a written offer, valid for at least three
+    years, to give any third party, for a charge no more than your
+    cost of physically performing source distribution, a complete
+    machine-readable copy of the corresponding source code, to be
+    distributed under the terms of Sections 1 and 2 above on a medium
+    customarily used for software interchange; or,
+
+    c) Accompany it with the information you received as to the offer
+    to distribute corresponding source code.  (This alternative is
+    allowed only for noncommercial distribution and only if you
+    received the program in object code or executable form with such
+    an offer, in accord with Subsection b above.)
+
+The source code for a work means the preferred form of the work for
+making modifications to it.  For an executable work, complete source
+code means all the source code for all modules it contains, plus any
+associated interface definition files, plus the scripts used to
+control compilation and installation of the executable.  However, as a
+special exception, the source code distributed need not include
+anything that is normally distributed (in either source or binary
+form) with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that component
+itself accompanies the executable.
+
+If distribution of executable or object code is made by offering
+access to copy from a designated place, then offering equivalent
+access to copy the source code from the same place counts as
+distribution of the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  4. You may not copy, modify, sublicense, or distribute the Program
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+  5. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Program or works based on it.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a license from the
+original licensor to copy, distribute or modify the Program subject to
+these terms and conditions.  You may not impose any further
+restrictions on the recipients' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties to
+this License.
+
+  7. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Program at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Program by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Program.
+
+If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+  8. If the distribution and/or use of the Program is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Program under this License
+may add an explicit geographical distribution limitation excluding
+those countries, so that distribution is permitted only in or among
+countries not thus excluded.  In such case, this License incorporates
+the limitation as if written in the body of this License.
+
+  9. The Free Software Foundation may publish revised and/or new versions
+of the General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Program
+specifies a version number of this License which applies to it and "any
+later version", you have the option of following the terms and conditions
+either of that version or of any later version published by the Free
+Software Foundation.  If the Program does not specify a version number of
+this License, you may choose any version ever published by the Free Software
+Foundation.
+
+  10. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the Free Software Foundation; we sometimes
+make exceptions for this.  Our decision will be guided by the two goals
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+
+                            NO WARRANTY
+
+  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+convey the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    {description}
+    Copyright (C) {year}  {fullname}
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+Also add information on how to contact you by electronic and paper mail.
+
+If the program is interactive, make it output a short notice like this
+when it starts in an interactive mode:
+
+    Gnomovision version 69, Copyright (C) year name of author
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, the commands you use may
+be called something other than `show w' and `show c'; they could even be
+mouse-clicks or menu items--whatever suits your program.
+
+You should also get your employer (if you work as a programmer) or your
+school, if any, to sign a "copyright disclaimer" for the program, if
+necessary.  Here is a sample; alter the names:
+
+  Yoyodyne, Inc., hereby disclaims all copyright interest in the program
+  `Gnomovision' (which makes passes at compilers) written by James Hacker.
+
+  {signature of Ty Coon}, 1 April 1989
+  Ty Coon, President of Vice
+
+This General Public License does not permit incorporating your program into
+proprietary programs.  If your program is a subroutine library, you may
+consider it more useful to permit linking proprietary applications with the
+library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.
+
+macbook-de-yaelin:git-game Yaelin$ cat readme.md
+git-game
+========
+
+Looks like you found the branch of the evil Mastermind.
+Things may start to get a little more challenging...
+
+``Level 4``
+
+The next clue you are looking for --
+   is in a file you choose to ignore!
+
+macbook-de-yaelin:git-game Yaelin$ cat .git
+cat: .git: Is a directory
+macbook-de-yaelin:git-game Yaelin$ cat. gitignore
+-bash: cat.: command not found
+macbook-de-yaelin:git-game Yaelin$ cat . gitignore
+cat: .: Is a directory
+cat: gitignore: No such file or directory
+macbook-de-yaelin:git-game Yaelin$ cat .gitignore
+# welcome to the ignore file!!
+
+#``Level 5``
+
+# This file is hidden by default, 
+# but did you know you have some branches that aren't shown to you,
+# when you check the list of branches?
+#
+# For your next clue...
+# Which abstract data type tends to implement sets and maps?? 
+# The answer is the same answer to this riddle:
+#
+#   I am both mother and father.
+#   I am seldom still
+#   yet I never wander.
+#   I never birth nor nurse.
+#   
+#   What am I?
+#
+# Afterwards... well, you
+# know, checkout to the answer. 
+
+*.rem
+a.out
+macbook-de-yaelin:git-game Yaelin$ git checkout reed
+error: pathspec 'reed' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git checkout rock
+error: pathspec 'rock' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git checkout mountain 
+error: pathspec 'mountain' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git checkout tree
+Branch 'tree' set up to track remote branch 'tree' from 'origin'.
+Switched to a new branch 'tree'
+macbook-de-yaelin:git-game Yaelin$ ls
+LICENSE			git-game		outputclue.sh
+README.md		nextclue_input.cpp
+macbook-de-yaelin:git-game Yaelin$ cat readme.md
+git-game
+========
+
+``Level 6``
+
+Welcome to the "tree" branch. 
+Looks like good ol' Linus modified the "nextclue_input.cpp" file. 
+Normally, when ran with the shell script "outputclue.sh", the "nextclue_input.cpp" file would give us the next hint.
+
+Maybe, you should try running the shell script with the "nextclue_input.cpp" file and see what happens...
+
+You can run the script by running the command "./outputclue.sh FILE" .
+If you are on Windows, it's okey to use `git-bash` that is installed with [msysgit](https://msysgit.github.io/).
+
+macbook-de-yaelin:git-game Yaelin$ ./outputclue.sh nextclue_input.cpp
+Level 7: 
+ Linus has been here...
+I love messing with these amateur programmers!!
+If you want some real fun, then you should try resolving a conflict between this branch (tree) and code4life.
+I introduced a little bug that you should fix in the conflict. >:)
+After you merge these 2 files you should run the shell script again!!
+
+Good Luck!!!
+
+ Hint: https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+macbook-de-yaelin:git-game Yaelin$ git add .
+warning: adding embedded git repository: git-game
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> git-game
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached git-game
+hint: 
+hint: See "git help submodule" for more information.
+macbook-de-yaelin:git-game Yaelin$ git commit -m "Updating Stuff."
+[tree fbab305] Updating Stuff.
+ 1 file changed, 1 insertion(+)
+ create mode 160000 git-game
+macbook-de-yaelin:git-game Yaelin$ git checkout mouse
+warning: unable to rmdir 'git-game': Directory not empty
+Branch 'mouse' set up to track remote branch 'mouse' from 'origin'.
+Switched to a new branch 'mouse'
+macbook-de-yaelin:git-game Yaelin$ git checkout mouse
+Already on 'mouse'
+Your branch is up to date with 'origin/mouse'.
+macbook-de-yaelin:git-game Yaelin$ ls
+LICENSE		README.md	git-game	remember
+macbook-de-yaelin:git-game Yaelin$ cat README.md
+git-game
+========
+
+``Level 8``
+
+Looks like you resolved your conflict and found our branch, congrats!! 
+
+Hmm...it seems this branch has a file that was seen before in another branch. 
+Do you "remember" what it is?
+I think this file has something to do with the next clue, but it seems to be very ugly looking. 
+Maybe if we compare the "diff"erences between this file and the file from before we'll know where to go next...
+
+macbook-de-yaelin:git-game Yaelin$ git diff mouse bug -- remember
+diff --git a/remember b/remember
+index 76bd37c..584a931 100644
+--- a/remember
++++ b/remember
+@@ -2312,7 +2312,7 @@ C7EpVk1Cth5p2tKx0w58i ytUWbvyeysGWv jS4QWZkzlAN2m3EqLffpZiy1XM izQzulpiV Q5eNfJ7
+ mrLDUvQK6M 2bREkk3RREZe6Ulawm3SU KHtoKj6jzKwhFYPzhcx1O4Culugp 0UzKqH9CjHM8akQ156fOYAeUUFp McAAI BHuGYzuoqoTSY 7Rby9YLfIMMcysFELGcL1rLD QAo0CaRo22ZfTaf2k iu9KM9ukJ67 EtoBFF9N2Dup5prFQ1 B51i0Kr8 E0 DMNSoaoxG82QQ8moaDFXDP78adKHF zJOCaIjmJQI uAJIAjoPRXXeTY0RrjEPCf 6CPhhKGqtW0KJiZsQk C Wn38v CjzwY4IRYr7W gvlFT6Ng6vmQxLrQEoK
+ 5NKuMyGGyQum5oQkvP8Am08 OeNWMuTPJIpaBkK LupcmcIO4axxMfp8KnAo m7PFvaY9M5fAn9lfo7Bkm4PBvJJ01 ii2LvkHC8gJ EsHtRTZToBKe pA7ij1m1 bkgGGuQjorQhc0l3bkb7XUoJjII 5ul hxlFoWzySnS M nUlxc5wg2VNIz7lSuuCCG0WL DLeEp7X KsxntcYrDTeV 1psLl YTRf qxrKwPDzSEHbWaxVmXKYpM2dq jV7WELrcHoOQ9D0YQsyQhbtrtp0 Nws3h8dR9ZHAfw0Q2FFvoQd kZFclOzunHHX0k7HWEqS
+ 57EyTqwnFMX 3CmavTItFa9yjtSIjZ i1VTU06u9rj HShUtnwlqL7ZUZP0i8o7hq U0cS Cr9 sTRitmSvJ7pSDPdd5Emzh xKPGY7mUWTn972NHq HjtdwgQN45QNSZr fyYf 1kBsF5xzcRoyv5K08jlAfoc oG Byz6CAD G4rpwi7HbWlxa0tge moM1Mz9J522wnDDPfOKaj dfL1Mm0G 4k1mQ0P9wAkKiKtLXvj9 fFy2cyfV1c7wzv4uoIQa7fwntk0 rDBPY6sXDNxgAgUIYCwav oVMxzApB5BhLCpvWlIn
+-Sn The next clue is: YtrydjKsYqebDoI3h bTINUeV6 pTVY8jnK2re HRwwNy25Ps6 u0YChCo5Jtw N3xkH3G nx aGo6yQTW RVZMsf3xk tBL0sG9GAR HQbyGYdqs i6dx1fyIPGJVciz8Z1NzdrvGE CKgkFauXqfKJmas cDLerWvBTRzUikmP2 0sqk2Xhie2DcIv KtCyYTlNx7WxJp6A2yox3r aJX4r7FpUhgsyGIwc prCCNx46GKVgzaerab3gXS7ieoOf1 Jp
++Sn In a branch named: Henry YtrydjKsYqebDoI3h bTINUeV6 pTVY8jnK2re HRwwNy25Ps6 u0YChCo5Jtw N3xkH3G nx aGo6yQTW RVZMsf3xk tBL0sG9GAR HQbyGYdqs i6dx1fyIPGJVciz8Z1NzdrvGE CKgkFauXqfKJmas cDLerWvBTRzUikmP2 0sqk2Xhie2DcIv KtCyYTlNx7WxJp6A2yox3r aJX4r7FpUhgsyGIwc prCCNx46GKVgzaerab3gXS7ieoOf1 Jp
+ n9ec28c7rYYGTF W933ju5 pyH8PXHnKhlwLU0C2akSaPrlpprD spXXhVp6X A6dTg1fBfNBwSvp1sw91Dav67x8f8b Q DAUTWahNriDlArXunXMJ3b489 lcgvI2SViBLrCulZCwsi4kog 4rDVp 90SWto6WkU4Qj gANCojbKr1omMS3hm6p1csqHHdNqy Pw2DzY 0pbPL3KVDW uAUcbE65VsxI 84ZEhEm93tTliegI6tdEPZe H9BV dMk jf1pA12qB8v8 8ep8vfgV9Z a7WqNF5b
+ lDSkBLh Sy7L w4X8QJuiL yJ 9KjSn2C12NV 5E7H9S4M7LrV lgxJn1Q8xcnyprQ34g2tC7 Doc36AAsmi58xKa0 kRQntjBdrPfD0QLOj1m ChzWh7JLGBRU Xs446EYE71sHMjtbSsOW4LeVK hzcX391c0Kpyj5bL7sSI5NmE ZrBux2YhJypFB07T03xNWHnLSjXg vbtc3kwd Bkffu aQKZiKBMDgzNBYPnurwpk8 npGXcjZOa9TxIkobUwM8WzApgE pwPwX m7amF juCYRog
+ lMrAVrH6 ZzHYozHGN f fE5ficRh2 pMQ6rpXtT49gijgjsO5eykZ9A o 30Tz1Agt5XgV 6odhdhHyYpV8U ZV qc3xnKKPYmjkeJwNGlAtXj f65vcbrsDI7od0E 50EVbGO7iT8Nk2Tilx52wRddM9HeA U8pEHg21Y5CfYjtI5Mnz GZ4lwoqno2Yi13ca2346CG SdoH4FjPUwqidWnZJdDUgqXH2FhpRn lTAPlp8KmiDc2cSEPVMnfzSeSSRC xq57ui lULf1lPpSJ x2 ZgpBp6qzX2v4tI
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SEARCHING
+
+  /pattern          *  Search forward for (N-th) matching line.
+  ?pattern          *  Search backward for (N-th) matching line.
+  n                 *  Repeat previous search (for N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &pattern          *  Display only matching lines
+        ---------------------------------------------------
+HELP -- Press RETURN for more, or q when done...skipping...
+tmSvJ7pSDPdd5Emzh xKPGY7mUWTn972NHq HjtdwgQN45QNSZr fyYf 1kBsF5xzcRoyv5K08jlAfoc oG Byz6CAD G4rpwi7HbWlxa0tge moM1Mz9J522wnDDPfOKaj dfL1Mm0G 4k1mQ0P9wAkKiKtLXvj9 fFy2cyfV1c7wzv4uoIQa7fwntk0 rDBPY6sXDNxgAgUIYCwav oVMxzApB5BhLCpvWlIn
+-Sn The next clue is: YtrydjKsYqebDoI3h bTINUeV6 pTVY8jnK2re HRwwNy25Ps6 u0YChCo5Jtw N3xkH3G nx aGo6yQTW RVZMsf3xk tBL0sG9GAR HQbyGYdqs i6dx1fyIPGJVciz8Z1NzdrvGE CKgkFauXqfKJmas cDLerWvBTRzUikmP2 0sqk2Xhie2DcIv KtCyYTlNx7WxJp6A2yox3r aJX4r7FpUhgsyGIwc prCCNx46GKVgzaerab3gXS7ieoOf1 Jp
++Sn In a branch named: Henry YtrydjKsYqebDoI3h bTINUeV6 pTVY8jnK2re HRwwNy25Ps6 u0YChCo5Jtw N3xkH3G nx aGo6yQTW RVZMsf3xk tBL0sG9GAR HQbyGYdqs i6dx1fyIPGJVciz8Z1NzdrvGE CKgkFauXqfKJmas cDLerWvBTRzUikmP2 0sqk2Xhie2DcIv KtCyYTlNx7WxJp6A2yox3r aJX4r7FpUhgsyGIwc prCCNx46GKVgzaerab3gXS7ieoOf1 Jp
+ n9ec28c7rYYGTF W933ju5 pyH8PXHnKhlwLU0C2akSaPrlpprD spXXhVp6X A6dTg1fBfNBwSvp1sw91Dav67x8f8b Q DAUTWahNriDlArXunXMJ3b489 lcgvI2SViBLrCulZCwsi4kog 4rDVp 90SWto6WkU4Qj gANCojbKr1omMS3hm6p1csqHHdNqy Pw2DzY 0pbPL3KVDW uAUcbE65VsxI 84ZEhEm93tTliegI6tdEPZe H9BV dMk jf1pA12qB8v8 8ep8vfgV9Z a7WqNF5b
+ lDSkBLh Sy7L w4X8QJuiL yJ 9KjSn2C12NV 5E7H9S4M7LrV lgxJn1Q8xcnyprQ34g2tC7 Doc36AAsmi58xKa0 kRQntjBdrPfD0QLOj1m ChzWh7JLGBRU Xs446EYE71sHMjtbSsOW4LeVK hzcX391c0Kpyj5bL7sSI5NmE ZrBux2YhJypFB07T03xNWHnLSjXg vbtc3kwd Bkffu aQKZiKBMDgzNBYPnurwpk8 npGXcjZOa9TxIkobUwM8WzApgE pwPwX m7amF juCYRog
+ lMrAVrH6 ZzHYozHGN f fE5ficRh2 pMQ6rpXtT49gijgjsO5eykZ9A o 30Tz1Agt5XgV 6odhdhHyYpV8U ZV qc3xnKKPYmjkeJwNGlAtXj f65vcbrsDI7od0E 50EVbGO7iT8Nk2Tilx52wRddM9HeA U8pEHg21Y5CfYjtI5Mnz GZ4lwoqno2Yi13ca2346CG SdoH4FjPUwqidWnZJdDUgqXH2FhpRn lTAPlp8KmiDc2cSEPVMnfzSeSSRC xq57ui lULf1lPpSJ x2 ZgpBp6qzX2v4tI
+macbook-de-yaelin:git-game Yaelin$ ls
+LICENSE		README.md	git-game	remember
+macbook-de-yaelin:git-game Yaelin$ git checkout henry
+error: pathspec 'henry' did not match any file(s) known to git.
+macbook-de-yaelin:git-game Yaelin$ git tag Henry
+fatal: tag 'Henry' already exists
+macbook-de-yaelin:git-game Yaelin$ git tag Henry
+fatal: tag 'Henry' already exists
+macbook-de-yaelin:git-game Yaelin$ git tag Henry
+fatal: tag 'Henry' already exists
+macbook-de-yaelin:git-game Yaelin$ git tag Henry Thierry && git tag -d Henry
+fatal: Failed to resolve 'Thierry' as a valid ref.
+macbook-de-yaelin:git-game Yaelin$ git tag Henry_Thierry && git tag -d Henry
+Deleted tag 'Henry' (was cbbcfbc)
+macbook-de-yaelin:git-game Yaelin$ git checkout Henry
+Branch 'Henry' set up to track remote branch 'Henry' from 'origin'.
+Switched to a new branch 'Henry'
+macbook-de-yaelin:git-game Yaelin$ cat README.md
+git-game
+========
+
+``Level 10``
+
+Welcome!! It looks like you made it to my Branch!!!
+Generally you want to refrain from making tags the same name as branches, unless you have a good reason.
+The tag is more like the stable release.
+While the branch is more like the in progress feature, which will be added soon.
+
+You're almost done!! Excited?? Hope you are! You have one more thing to do!
+
+Now its time to update the master branch, updating is really useful when you fork a repository and your forked repo starts to get behind on commits. The repository to update from is: https://github.com/drami025/git-game.git
+
+Don't cheat!!
+
+Here is a [link](https://help.github.com/articles/configuring-a-remote-for-a-fork/) that explains how to fork a remote repository.
+macbook-de-yaelin:git-game Yaelin$ cat readme.md
+git-game
+========
+
+``Level 10``
+
+Welcome!! It looks like you made it to my Branch!!!
+Generally you want to refrain from making tags the same name as branches, unless you have a good reason.
+The tag is more like the stable release.
+While the branch is more like the in progress feature, which will be added soon.
+
+You're almost done!! Excited?? Hope you are! You have one more thing to do!
+
+Now its time to update the master branch, updating is really useful when you fork a repository and your forked repo starts to get behind on commits. The repository to update from is: https://github.com/drami025/git-game.git
+
+Don't cheat!!
+
+Here is a [link](https://help.github.com/articles/configuring-a-remote-for-a-fork/) that explains how to fork a remote repository.
+macbook-de-yaelin:git-game Yaelin$ git remote -v
+origin	https://github.com/git-game/git-game.git (fetch)
+origin	https://github.com/git-game/git-game.git (push)
+macbook-de-yaelin:git-game Yaelin$ git remote add upstream https://github.com/hgarc014/git-game.git
+macbook-de-yaelin:git-game Yaelin$ git remote -v
+origin	https://github.com/git-game/git-game.git (fetch)
+origin	https://github.com/git-game/git-game.git (push)
+upstream	https://github.com/hgarc014/git-game.git (fetch)
+upstream	https://github.com/hgarc014/git-game.git (push)
+macbook-de-yaelin:git-game Yaelin$ git remote -v
+origin	https://github.com/git-game/git-game.git (fetch)
+origin	https://github.com/git-game/git-game.git (push)
+upstream	https://github.com/hgarc014/git-game.git (fetch)
+upstream	https://github.com/hgarc014/git-game.git (push)
+macbook-de-yaelin:git-game Yaelin$ git remote add upstream https://github.com/yham01/git-game.git
+fatal: remote upstream already exists.
+macbook-de-yaelin:git-game Yaelin$ git remote add upstream https://github.com/Yaelin/git-game.git
+fatal: remote upstream already exists.
+macbook-de-yaelin:git-game Yaelin$ git remote add upstream https://github.com/Yaelin/homework.git
+fatal: remote upstream already exists.
+macbook-de-yaelin:git-game Yaelin$ git remote add updatefromhere git@github.com/yham01/git-game.git
+macbook-de-yaelin:git-game Yaelin$ git pull updatefromhere master
+fatal: 'git@github.com/yham01/git-game.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+macbook-de-yaelin:git-game Yaelin$ cat readme.md
+git-game
+========
+
+``Level 10``
+
+Welcome!! It looks like you made it to my Branch!!!
+Generally you want to refrain from making tags the same name as branches, unless you have a good reason.
+The tag is more like the stable release.
+While the branch is more like the in progress feature, which will be added soon.
+
+You're almost done!! Excited?? Hope you are! You have one more thing to do!
+
+Now its time to update the master branch, updating is really useful when you fork a repository and your forked repo starts to get behind on commits. The repository to update from is: https://github.com/drami025/git-game.git
+
+Don't cheat!!
+
+Here is a [link](https://help.github.com/articles/configuring-a-remote-for-a-fork/) that explains how to fork a remote repository.
+macbook-de-yaelin:git-game Yaelin$ git remote add updatefromhere git@github.com:yham01/git-game.git
+fatal: remote updatefromhere already exists.
+macbook-de-yaelin:git-game Yaelin$ git clone https://github.com/YaelinHam/IntroProg2018.git
+Cloning into 'IntroProg2018'...
+cremote: Repository not found.
+fatal: repository 'https://github.com/YaelinHam/IntroProg2018.git/' not found
+macbook-de-yaelin:git-game Yaelin$ git clone https://github.com/yham01/IntroProg2018.git
+Cloning into 'IntroProg2018'...
+remote: Repository not found.
+fatal: repository 'https://github.com/yham01/IntroProg2018.git/' not found
+macbook-de-yaelin:git-game Yaelin$ git clone https://github.com/yham01/IntroProg2018.git
+Cloning into 'IntroProg2018'...
+remote: Counting objects: 59, done.
+remote: Total 59 (delta 0), reused 0 (delta 0), pack-reused 59
+Unpacking objects: 100% (59/59), done.
+macbook-de-yaelin:git-game Yaelin$ cd IntroProg2018
+macbook-de-yaelin:IntroProg2018 Yaelin$ 2-github/homework
+-bash: 2-github/homework: is a directory
+macbook-de-yaelin:IntroProg2018 Yaelin$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+macbook-de-yaelin:IntroProg2018 Yaelin$ add 2-github/homework/Yaelin-Ham-Git-Game.txt
+-bash: add: command not found
+macbook-de-yaelin:IntroProg2018 Yaelin$ git add 2-github/homework/Yaelin-Ham-Git-Game.txt
+fatal: pathspec '2-github/homework/Yaelin-Ham-Git-Game.txt' did not match any files
+macbook-de-yaelin:IntroProg2018 Yaelin$ git add 2-github/homework/Yaelin-Ham-Git-Game.txt
+fatal: pathspec '2-github/homework/Yaelin-Ham-Git-Game.txt' did not match any files
+macbook-de-yaelin:IntroProg2018 Yaelin$ git add 2-github/homework/name-of-your-file.txt
+fatal: pathspec '2-github/homework/name-of-your-file.txt' did not match any files
+macbook-de-yaelin:IntroProg2018 Yaelin$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+macbook-de-yaelin:IntroProg2018 Yaelin$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+macbook-de-yaelin:IntroProg2018 Yaelin$ git add .
+macbook-de-yaelin:IntroProg2018 Yaelin$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+macbook-de-yaelin:IntroProg2018 Yaelin$ git push
+Everything up-to-date
+macbook-de-yaelin:IntroProg2018 Yaelin$ 
